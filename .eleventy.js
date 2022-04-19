@@ -1,5 +1,7 @@
 // docs: https://www.11ty.io/docs/config/
 
+const { DateTime } = require("luxon");
+
 module.exports = function(eleventyConfig) {
   
   // eleventyConfig.addFilter( "myFilter", function() {});
@@ -19,6 +21,11 @@ module.exports = function(eleventyConfig) {
   ]);
   
   eleventyConfig.addPassthroughCopy("public");
+  
+  eleventyConfig.addFilter("htmlDateString", dateObj => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+  });
+
   
   eleventyConfig.setBrowserSyncConfig({
     // https://www.browsersync.io/docs/options/#option-ghostMode

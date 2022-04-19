@@ -1,3 +1,7 @@
 body {
   background: #dadada;
 }
+
+[aria-current="page"]{
+  color: orange;
+}
