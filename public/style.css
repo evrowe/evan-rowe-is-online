@@ -2,12 +2,12 @@
 Page Structure
 **/
 body {
-  background: #dadada;
+  background: #efefef;
   margin: 0;
 }
 
 header {
-  background-color: #fff;
+  background-color: #fffff;
   margin: 0;
   padding: 10px;
 }
@@ -57,5 +57,8 @@ code {
   border-style: solid;
   border-width: 1px;
   padding: 2px 4px;
-  
+}
+
+.big-image {
+  width: 100%;
 }
