@@ -1,8 +1,10 @@
 ---
 layout: layouts/page.njk
-pageTitle: Evan Rowe is On The Internet
+pageTitle: Contact Me - Evan Rowe
 ---
-## I'm around
+## You Can Find Me Online
+
+When I _am_ `very logged on`, you can find me in the following places:
 
 * 🐦 Twitter: [https://www.twitter.com/ev_rowe](https://www.twitter.com/ev_rowe)
 * 💼 LinkedIn: [https://www.linkedin.com/in/evrowe](https://www.linkedin.com/in/evrowe)

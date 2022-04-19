@@ -1,6 +1,46 @@
+/**
+Page Structure
+**/
 body {
   background: #dadada;
+  margin: 0;
 }
+
+header {
+  background-color: #fff;
+  margin: 0;
+  padding: 10px;
+}
+
+header nav {
+  
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 10px 0 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin-top: 15px;
+  padding: 20px;
+}
+
+footer {
+  margin-top: 100px;
+  padding: 20px;
+}
+
+/**
+Text formatting
+**/
 
 [aria-current="page"]{
   color: orange;
@@ -8,4 +48,14 @@ body {
 
 .wrapper.page li a {
   color: red;
+}
+
+code {
+  background: #cacaca;
+  border-color: #ababab;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 2px 4px;
+  
 }

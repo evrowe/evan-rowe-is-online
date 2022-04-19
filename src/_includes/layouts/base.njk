@@ -9,9 +9,6 @@
   <header>
     <nav>
       <ul>
-        <h4>
-          {{page.url}}
-        </h4>
         <li><a {% if page.url == '/' %} aria-current="page"{% endif %}href="/">Home</a></li>
         <li><a {% if page.url.includes('posts') %} aria-current="page"{% endif %}href="/posts">Posts</a></li>
         <li><a {% if page.url.includes('/about') %} aria-current="page"{% endif %}href="/about">About</a></li>
@@ -22,5 +19,5 @@
   <body>
     {{ content | safe }}
   </body>
-  <footer><p><sub>Using Eleventy v{{ pkg.dependencies["@11ty/eleventy"] }}.</sub></p></footer>
+  <footer><p><sub>Using Eleventy v{{ pkg.dependencies["@11ty/eleventy"] }}. | current page url: {{page.url}}</sub></p></footer>
 </html>
