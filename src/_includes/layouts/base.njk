@@ -9,10 +9,13 @@
   <header>
     <nav>
       <ul>
+        <h4>
+          {{page.url}}
+        </h4>
         <li><a {% if page.url == '/' %} aria-current="page"{% endif %}href="/">Home</a></li>
-        <li><a {% if page.url == '/posts' %} aria-current="page"{% endif %}href="/posts">Posts</a></li>
-        <li><a {% if page.url == '/about' %} aria-current="page"{% endif %}href="/about">About</a></li>
-        <li><a {% if page.url == '/contact' %} aria-current="page"{% endif %}href="/Contact">Contact</a></li>
+        <li><a {% if page.url.includes('posts') %} aria-current="page"{% endif %}href="/posts">Posts</a></li>
+        <li><a {% if page.url.includes('/about') %} aria-current="page"{% endif %}href="/about">About</a></li>
+        <li><a {% if page.url.includes('/contact') %} aria-current="page"{% endif %}href="/contact">Contact</a></li>
       </ul>
     </nav>
   </header>

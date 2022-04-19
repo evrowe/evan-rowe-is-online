@@ -5,3 +5,7 @@ body {
 [aria-current="page"]{
   color: orange;
 }
+
+.wrapper.page li a {
+  color: red;
+}
