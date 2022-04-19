@@ -7,14 +7,19 @@
     <title>{{ pageTitle or siteData.name }}</title>
     <script type="text/javascript">
       const toggleTheme = function(e) {
-        e.preventDefault();
+        e.preventDefault()
+        if (e.target.className !== 'change-theme') return
         let body = document.querySelector('body')
         let themeButton = document.querySelector('.change-theme')
-        if (body.classList.includes('dark')) {
-          body.classList = [];
-          themeButton.innerText = '';
+        if (body.className.includes('dark')) {
+          body.className = ''
+          themeButton.innerText = '🌒'
+        } else {
+          body.className = 'dark'
+          themeButton.innerText = '☀️'
         }
       }
+      document.addEventListener('click', toggleTheme)
     </script>
   </head>
   

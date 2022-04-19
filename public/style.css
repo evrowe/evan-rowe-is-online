@@ -7,17 +7,11 @@ Variables
 
   --body-bg--light-mode: #efefef;
   --body-bg--dark-mode: #333333;
+  
+  --header-bg--dark-mode: #000000;
+  --header-link--dark-mode: #dedede;
 
   --color--red: red;
-}
-
-/**
-Themes
-**/
-
-body.dark {
-  background: var(--body-color--dark-mode);
-  color: var(--body-color--dark-mode);
 }
 
 /**
@@ -40,6 +34,13 @@ header {
 
 header .site-name {
   grid-column: 1;
+}
+
+header .change-theme {
+  background: none;
+  border: 0;
+  margin: 0 0 0 5px;
+  padding: 0;
 }
 
 header nav {
@@ -104,4 +105,21 @@ code {
 
 .big-image {
   width: 100%;
+}
+
+/**
+Dark Mode
+**/
+
+body.dark {
+  background: var(--body-bg--dark-mode);
+  color: var(--body-color--dark-mode);
+}
+
+body.dark header {
+  background: var(--header-bg--dark-mode);
+}
+
+body.dark header nav ul li a {
+  color: var(--header-link--dark-mode);
 }
