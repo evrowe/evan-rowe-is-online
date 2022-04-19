@@ -6,10 +6,16 @@ Variables
   --body-color--dark-mode: #efefef;
 
   --body-bg--light-mode: #efefef;
-  --body-bg--dark-mode: #333333;
+  --body-bg--dark-mode: #1e2935;
   
-  --header-bg--dark-mode: #000000;
-  --header-link--dark-mode: #dedede;
+  --header-bg: #121212;
+  --header-color: #ffffff;
+  --header-link: #ff6aa9;
+  --header-link-active: #ffffff;
+  
+  --link-color--light-mode: ;
+  --link-color--dark-mode: #ff6aa9;
+  --link-color-active--dark-mode: #ffffff;
 
   --color--red: red;
 }
@@ -25,7 +31,8 @@ body {
 }
 
 header {
-  background-color: #ffffff;
+  background-color: var(--header-bg);
+  color: var(--header-color);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0;
@@ -61,7 +68,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #333333;
+  color: var(--header-link);
   font-weight: bold;
   text-decoration: none;
 }
@@ -69,7 +76,7 @@ header nav ul li a {
 header nav ul li a:hover,
 header nav ul li a:active,
 header nav ul li a:focus {
-  color: var(--color--red);
+  color: var(--header-link-active);
 }
 
 .wrapper {
@@ -114,12 +121,4 @@ Dark Mode
 body.dark {
   background: var(--body-bg--dark-mode);
   color: var(--body-color--dark-mode);
-}
-
-body.dark header {
-  background: var(--header-bg--dark-mode);
-}
-
-body.dark header nav ul li a {
-  color: var(--header-link--dark-mode);
 }
