@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
     <title>{{ pageTitle or siteData.name }}</title>
   </head>
   <body>
     {{ content | safe }}
   </body>
+  <footer><p><sub>Using Eleventy v{{ pkg.dependencies["@11ty/eleventy"] }}.</sub></p></footer>
 </html>
