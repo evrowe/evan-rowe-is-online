@@ -5,19 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/public/style.css" />
     <title>{{ pageTitle or siteData.name }}</title>
+    <script type="text/javascript">
+      const toggleTheme = function(e) {
+        e.preventDefault();
+        let body = document.querySelector('body')
+        let themeButton = document.querySelector('.change-theme')
+        if (body.classList.includes('dark')) {
+          body.classList = [];
+          themeButton.innerText = '';
+        }
+      }
+    </script>
   </head>
-  <header>
-    <nav>
-      <div class="site-name">evan rowe</div>
-      <ul>
-        <li><a {% if page.url == '/' %} aria-current="page"{% endif %}href="/">home</a></li>
-        <li><a {% if page.url.includes('posts') %} aria-current="page"{% endif %}href="/posts">posts</a></li>
-        <!--li><a {% if page.url.includes('/about') %} aria-current="page"{% endif %}href="/about">about</a></li-->
-        <li><a {% if page.url.includes('/contact') %} aria-current="page"{% endif %}href="/contact">contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  
   <body>
+    <header>
+      <div class="site-name">evan rowe <button class="change-theme">🌒</button></div>
+      <nav>
+        <ul>
+          <li><a {% if page.url == '/' %} aria-current="page"{% endif %}href="/">home</a></li>
+          <li><a {% if page.url.includes('posts') %} aria-current="page"{% endif %}href="/posts">posts</a></li>
+          <!--li><a {% if page.url.includes('/about') %} aria-current="page"{% endif %}href="/about">about</a></li-->
+          <li><a {% if page.url.includes('/contact') %} aria-current="page"{% endif %}href="/contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
     {{ content | safe }}
   </body>
   <footer><p><sub>Using Eleventy v{{ pkg.dependencies["@11ty/eleventy"] }}. | current page url: {{page.url}}</sub></p></footer>
