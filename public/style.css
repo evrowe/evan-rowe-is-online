@@ -32,8 +32,9 @@ a:hover {
   color: var(--link-color-active--light-mode);
 }
 
-[aria-current="page"]{
-  text-decoration: underline;
+[aria-current="page"]::before{
+  content: "▸";
+  padding-right: 3px;
 }
 
 code {
@@ -52,8 +53,8 @@ body {
   background: var(--body-bg--light-mode);
   color: var(--body-color--light-mode);
   font-family: sans-serif;
-  font-size: 16px;
-  line-height: 1.5rem;
+  font-size: 18px;
+  line-height: 1.6em;
   margin: 0;
 }
 
