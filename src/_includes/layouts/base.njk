@@ -6,6 +6,13 @@
     <link rel="stylesheet" type="text/css" href="/public/style.css" />
     <title>{{ pageTitle or siteData.name }}</title>
   </head>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/posts">View all posts</a></li>
+      </ul>
+    </nav>
+  </header>
   <body>
     {{ content | safe }}
   </body>
