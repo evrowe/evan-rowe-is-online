@@ -6,6 +6,8 @@ pageTitle: Evan Rowe is On The Internet
 Welcome to {{ siteData.name }}.
 </h1>
 <img class="big-image" src="https://cdn.glitch.global/bb2a64aa-d596-4b0f-839a-41f66ba7056e/Tron-Kevin-Flynn.jpg?v=1650396274623">
+
+<div class="content">
 <h2>Greetings, Programs!</h2>
 
 _(Yes, I'm old.)_
@@ -25,3 +27,4 @@ I also write video game reviews for [Saving Content](https://www.savingcontent.c
 I love to cook, though I don't often have as much time for it as I'd like these days. I do bust out the occasional tasty meal when time allows it, though.
 
 I have fallen deeply in love with my espresso machine over the past few months and recently have learned how to pull shots correctly and am working on mastering my latte art, although it turns out the latter takes a whole lot of practice (who knew).
+</div>

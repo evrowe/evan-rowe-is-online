@@ -7,8 +7,8 @@
     <title>{{ pageTitle or siteData.name }}</title>
     <script type="text/javascript">
       const toggleTheme = function(e) {
-        e.preventDefault()
         if (e.target.className !== 'change-theme') return
+        e.preventDefault()
         let body = document.querySelector('body')
         let themeButton = document.querySelector('.change-theme')
         if (body.className.includes('dark')) {
