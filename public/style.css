@@ -132,17 +132,21 @@ Theme Switcher
   height: 34px;
   width: 60px;
 }
-toggler .change-theme {
+.toggler .change-theme {
   opacity: 0;
   width: 0;
   height: 0;
 }
-toggler.change-theme::before {
-  display: block;
-  content: " ";
-  padding: 3px 6px;
-  border-radius: 2px;
+.toggler .slider {
   background-color: var(--color--white);
+  border-radius: 2px;
+  bottom: 1rem;
+  content: "";
+  display: block;
+  height: 6px;
+  left: 1rem;
+  position: absolute;
+  width: 24px;
 }
 
 .big-image {
