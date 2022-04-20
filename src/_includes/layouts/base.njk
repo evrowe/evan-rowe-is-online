@@ -8,15 +8,11 @@
     <script type="text/javascript">
       const toggleTheme = function(e) {
         if (e.target.className !== 'change-theme') return
-        e.preventDefault()
         let body = document.querySelector('body')
-        let themeButton = document.querySelector('.change-theme')
         if (body.className.includes('dark')) {
           body.className = ''
-          themeButton.innerText = '🌒'
         } else {
           body.className = 'dark'
-          themeButton.innerText = '☀️'
         }
       }
       document.addEventListener('click', toggleTheme)
@@ -25,7 +21,7 @@
   
   <body>
     <header>
-      <div class="site-name">evan rowe <button class="change-theme">🌒</button></div>
+      <div class="site-name">evan-rowe.com <span class="toggler">☀️<input type="checkbox" class="change-theme"/>🌒</span></div>
       <nav>
         <ul>
           <li><a {% if page.url == '/' %} aria-current="page"{% endif %}href="/">home</a></li>

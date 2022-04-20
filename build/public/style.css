@@ -2,6 +2,13 @@
 Variables
 **/
 :root {
+  --color--blue-light: #58c7ea;
+  --color--blue-dark: #1a7693;
+  --color--pink-light: #ff6aa9;
+  --color--pink-dark: #ce1d68;
+  --color--white: #ffffff;
+  
+  
   --body-color--light-mode: #222222;
   --body-color--dark-mode: #efefef;
 
@@ -9,16 +16,14 @@ Variables
   --body-bg--dark-mode: #1e2935;
   
   --header-bg: #121212;
-  --header-color: #ffffff;
+  --header-color: var(--color--white);
   --header-link: #ff6aa9;
-  --header-link-active: #ffffff;
+  --header-link-active: var(--color--white);
   
-  --link-color--light-mode: #ce1d68;
-  --link-color-active--light-mode: #1a7693;
-  --link-color--dark-mode: #ff6aa9;
-  --link-color-active--dark-mode: #58c7ea;
-
-  --color--red: red;
+  --link-color--light-mode: var(--color--pink-dark);
+  --link-color-active--light-mode: var(--color--blue-dark);
+  --link-color--dark-mode: var(--color--pink-light);
+  --link-color-active--dark-mode: var(--color--blue-light);
 }
 
 /**
@@ -72,13 +77,6 @@ header .site-name {
   grid-column: 1;
 }
 
-header .change-theme {
-  background: none;
-  border: 0;
-  margin: 0 0 0 5px;
-  padding: 0;
-}
-
 header nav {
   grid-column: 2 / 3;
 }
@@ -124,6 +122,21 @@ footer {
   padding: 20px;
 }
 
+/**
+Theme Switcher
+**/
+
+input.change-theme {
+  border: 0;
+}
+input.change-theme::before {
+  display: block;
+  width: 12px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--color--white);
+}
+
 .big-image {
   width: 100%;
 }
@@ -137,9 +150,9 @@ body.dark {
   color: var(--body-color--dark-mode);
 }
 
-a { color: var(--link-color--dark-mode); }
-a:active,
-a:focus,
-a:hover {
+body.dark a { color: var(--link-color--dark-mode); }
+body.dark a:active,
+body.dark a:focus,
+body.dark a:hover {
   color: var(--link-color-active--dark-mode);
 }
