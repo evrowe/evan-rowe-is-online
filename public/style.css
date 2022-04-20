@@ -11,7 +11,7 @@ Variables
   /* Synthvibe Colors */
   --color--midnight-blue: #000520;
   --color--not-quite-white: #DBDDDC;
-  --color--black: #676767;
+  --color--mid-grey: #676767;
   --color--cornflower: #4972fc;
   --color--cyan: #3cfffd;
   --color--teal: #0bffd5;
@@ -19,6 +19,10 @@ Variables
   --color--neon-pink: #ff12af;
   --color--purple: #b442fe;
   /* End Snythvibe */
+  
+  /* Synthvibe extensions */
+  --color--deep-night-blue: #00000b;
+  /* End Synthvibe extensions */
   
   --body-color--light-mode: #222222;
   --body-color--dark-mode: #efefef;
@@ -35,11 +39,20 @@ Variables
   --link-color-active--light-mode: var(--color--blue-dark);
   --link-color--dark-mode: var(--color--pink-light);
   --link-color-active--dark-mode: var(--color--blue-light);
+  
+  /* Type Styles */
+  --type--family--monospace: monospace;
 }
 
 /**
 Text formatting
 **/
+
+h1,
+h2,
+h3 {
+  font-family: var(--type--family--monospace);
+}
 
 a { color: var(--link-color--light-mode); }
 a:active,
@@ -182,18 +195,25 @@ Dark Mode
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: var(--body-bg--dark-mode);
-    color: var(--body-color--dark-mode);
+    background: var(--color--midnight-blue);
+    color: var(--color--not-quite-white);
+  }
+  
+  header,
+  footer {
+    background: var(--color--deep-night-blue);
   }
 
-  body a { color: var(--link-color--dark-mode); }
+  body a { color: var(--color--pink); }
   body a:active,
   body a:focus,
   body a:hover {
-    color: var(--link-color-active--dark-mode);
+    color: var(--color--teal);
   }
-}
-
-@media (prefers-color-scheme: light) {
   
+  h1,
+  h2,
+  h3 {
+    color: var(--color--purple);
+  }
 }
