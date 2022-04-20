@@ -16,7 +16,7 @@ Variables
   --link-color--light-mode: #ce1d68;
   --link-color-active--light-mode: #1a7693;
   --link-color--dark-mode: #ff6aa9;
-  --link-color-active--dark-mode: #ffffff;
+  --link-color-active--dark-mode: #58c7ea;
 
   --color--red: red;
 }
@@ -63,7 +63,7 @@ header {
   color: var(--header-color);
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin: 0;
   padding: 20px;
 }
@@ -135,4 +135,11 @@ Dark Mode
 body.dark {
   background: var(--body-bg--dark-mode);
   color: var(--body-color--dark-mode);
+}
+
+a { color: var(--link-color--dark-mode); }
+a:active,
+a:focus,
+a:hover {
+  color: var(--link-color-active--dark-mode);
 }
