@@ -105,15 +105,21 @@ code {
 /**
 Page Structure
 **/
+html, body { height: 100%; }
 body {
   background: var(--body-bg--light-mode);
   color: var(--body-color--light-mode);
-  display: grid;
   font-family: sans-serif;
   font-size: 18px;
-  grid-template-rows: 2, 1fr;
   line-height: 1.6em;
   margin: 0;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%;
 }
 
 header {
