@@ -32,9 +32,9 @@ Variables
   --body-bg--dark-mode: #1e2935;
   
   --header-bg: #121212;
-  --header-color: var(--color--white);
+  --header-color: rgb(var(--color--white));
   --header-link: #ff6aa9;
-  --header-link-active: var(--color--white);
+  --header-link-active: rgb(var(--color--white));
   
   --link-color--light-mode: var(--color--pink-dark);
   --link-color-active--light-mode: var(--color--blue-dark);
@@ -217,7 +217,7 @@ Theme Switcher
 }
 
 .toggler .slider:before {
-  background-color: var(--color--white);
+  background-color: rgb(var(--color--white));
   border-radius: 7px;
   bottom: -.2rem;
   content: "";
