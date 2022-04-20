@@ -8,7 +8,7 @@ Welcome to {{ siteData.name }}.
 <img class="big-image" src="https://cdn.glitch.global/bb2a64aa-d596-4b0f-839a-41f66ba7056e/Tron-Kevin-Flynn.jpg?v=1650396274623">
 
 <div class="content">
-<h2>Greetings, Programs!<span class="cursor">▮</span></h2>
+<h2 class="underline"><span class="prompt" aria-hidden="true">➤</span>Greetings, Programs!<span class="cursor" aria-hidden="true">▮</span></h2>
 
 _(Yes, I'm old.)_
 

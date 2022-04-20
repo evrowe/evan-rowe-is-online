@@ -77,18 +77,27 @@ code {
 
 .cursor {
   animation-delay: 1s;
-  animation-duration: 1.2s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
-  animation-name: blink;
+  animation-name: cursor-blink;
   font-size: 1.3em;
   opacity: 100%;
 }
 
-@keyframes blink {
+.prompt {
+  color: var(--color--teal);
+  margin-right: 5px;
+}
+
+@keyframes cursor-blink {
   0% { opacity: 100%; }
-  20% { opacity: 100%; }
-  90% { opacity: 0%; }
+  60% { opacity: 100%; }
+  80% { opacity: 0%; }
   100% { opacity: 0%; }
+}
+
+.underline {
+  
 }
 
 /**
