@@ -131,8 +131,8 @@ input.change-theme {
 }
 input.change-theme::before {
   display: block;
-  width: 12px;
-  height: 4px;
+  content: " ";
+  padding: 3px 6px;
   border-radius: 2px;
   background-color: var(--color--white);
 }
