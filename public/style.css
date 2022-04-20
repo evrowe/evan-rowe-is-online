@@ -2,11 +2,12 @@
 Variables
 **/
 :root {
+  /* TODO: Convert colors to RGB    */
   --color--blue-light: #58c7ea;
   --color--blue-dark: #1a7693;
   --color--pink-light: #ff6aa9;
   --color--pink-dark: #ce1d68;
-  --color--white: #ffffff;
+  --color--white: rgb();
   
   /* Synthvibe Colors */
   --color--midnight-blue: #000520;
@@ -256,6 +257,11 @@ Dark Mode
   h2,
   h3 {
     color: var(--color--purple);
+    text-shadow: 0 0 5px rgba(255, 255, 255, .1);
+  }
+  
+  p {
+    text-shadow: 0 0 5px rgba(255, 255, 255, .1);
   }
   
   code {
