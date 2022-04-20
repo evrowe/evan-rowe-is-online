@@ -126,10 +126,18 @@ footer {
 Theme Switcher
 **/
 
-input.change-theme {
-  border: 0;
+.toggler {
+  position: relative;
+  display: inline-block;
+  height: 34px;
+  width: 60px;
 }
-input.change-theme::before {
+toggler .change-theme {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+toggler.change-theme::before {
   display: block;
   content: " ";
   padding: 3px 6px;
