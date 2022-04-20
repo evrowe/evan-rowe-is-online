@@ -8,6 +8,17 @@ Variables
   --color--pink-dark: #ce1d68;
   --color--white: #ffffff;
   
+  /* Synthvibe Colors */
+  --color--midnight-blue: #000520;
+  --color--not-quite-white: #DBDDDC;
+  --color--black: #676767;
+  --color--cornflower: #4972fc;
+  --color--cyan: #3cfffd;
+  --color--teal: #0bffd5;
+  --color--pink: #f563ea;
+  --color--neon-pink: #ff12af;
+  --color--purple: #b442fe;
+  /* End Snythvibe */
   
   --body-color--light-mode: #222222;
   --body-color--dark-mode: #efefef;
@@ -169,14 +180,20 @@ Theme Switcher
 Dark Mode
 **/
 
-body.dark {
-  background: var(--body-bg--dark-mode);
-  color: var(--body-color--dark-mode);
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--body-bg--dark-mode);
+    color: var(--body-color--dark-mode);
+  }
+
+  body a { color: var(--link-color--dark-mode); }
+  body a:active,
+  body a:focus,
+  body a:hover {
+    color: var(--link-color-active--dark-mode);
+  }
 }
 
-body.dark a { color: var(--link-color--dark-mode); }
-body.dark a:active,
-body.dark a:focus,
-body.dark a:hover {
-  color: var(--link-color-active--dark-mode);
+@media (prefers-color-scheme: light) {
+  
 }

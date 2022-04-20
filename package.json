@@ -1,6 +1,6 @@
 {
-  "name": "eleventy-on-glitch",
-  "description": "A starter template for 11ty (eleventy) static site generator on glitch.com",
+  "name": "evan-rowe-is-online",
+  "description": "An 11ty (eleventy) based static site for me, Evan Rowe, built with glitch",
   "tags": [
     "eleventy",
     "11ty",
