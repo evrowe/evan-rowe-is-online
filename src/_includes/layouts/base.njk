@@ -11,8 +11,9 @@
       const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
       
       const toggleTheme = function(e) {
-        if (e.target.className !== 'change-theme') return
+        if (e.target.className !== 'slider') return
         let body = document.querySelector('body')
+        
         if (body.hasAttribute('data-theme') && body.attributes['data-theme'] == 'dark') {
           prefersDarkMode ? body.setAttribute('data-theme', 'light') : body.removeAttribute('data-theme')
         } else {

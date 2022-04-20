@@ -260,6 +260,11 @@ Dark Mode
     text-shadow: 0 0 8px rgba(var(--color--white), .1);
   }
   
+  .underline {
+    border-bottom-color: var(--color--teal);
+    padding-bottom: 10px;
+  }
+  
   p {
 /*     text-shadow: 0 0 5px rgba(var(--color--white), .2); */
   }
