@@ -34,6 +34,6 @@
       </nav>
     </header>
     {{ content | safe }}
+    <footer><p><sub>Using Eleventy v{{ pkg.dependencies["@11ty/eleventy"] }}. | current page url: {{page.url}}</sub></p></footer>
   </body>
-  <footer><p><sub>Using Eleventy v{{ pkg.dependencies["@11ty/eleventy"] }}. | current page url: {{page.url}}</sub></p></footer>
 </html>
