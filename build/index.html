@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+    <title>Evan Rowe is On The Internet</title>
+    <script type="text/javascript">
+      const toggleTheme = function(e) {
+        if (e.target.className !== 'change-theme') return
+        e.preventDefault()
+        let body = document.querySelector('body')
+        let themeButton = document.querySelector('.change-theme')
+        if (body.className.includes('dark')) {
+          body.className = ''
+          themeButton.innerText = '🌒'
+        } else {
+          body.className = 'dark'
+          themeButton.innerText = '☀️'
+        }
+      }
+      document.addEventListener('click', toggleTheme)
+    </script>
+  </head>
+  
+  <body>
+    <header>
+      <div class="site-name">evan rowe <button class="change-theme">🌒</button></div>
+      <nav>
+        <ul>
+          <li><a  aria-current="page"href="/">home</a></li>
+          <li><a href="/posts">posts</a></li>
+          <!--li><a href="/about">about</a></li-->
+          <li><a href="/contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+<div class="wrapper home">
+  <h1>
+Welcome to Evan's Cool Website.
+</h1>
+<img class="big-image" src="https://cdn.glitch.global/bb2a64aa-d596-4b0f-839a-41f66ba7056e/Tron-Kevin-Flynn.jpg?v=1650396274623">
+<div class="content">
+<h2>Greetings, Programs!</h2>
+<p><em>(Yes, I'm old.)</em></p>
+<p>Hi, I'm Evan. I'm the Engineering Manager of the Consul UI team at <a href="https://www.hashicorp.com">HashiCorp</a>, and a longtime frontend and JavaScript engineer. (I'm hiring for <a href="https://grnh.se/7716c1761us">two</a> <a href="https://grnh.se/8c1e8b4f1us">roles</a> at the moment, by the way!) Formerly an Eng Manager and Software Engineer at <a href="https://www.fastly.com">Fastly</a>, I spent over ten years creating rich JavaScript applications using frameworks and tools like Ember.js, React, and even jQuery. While I've always had a passion for writing code, coaching people and running teams is what drives me today.</p>
+<p>I love taking a people-focused, sustainability driven approach to helping teams write software and deliver features; I firmly believe the happiness of a team directly correlates to the quality of its output, and prioritizing team health above all else is an amazingly effective path to getting great results. Shocker, I know.</p>
+<p>This is a ✨ new ✨ personal website to replace the old one I've had for like six years. It's very much a WIP but I've learned to embrace iteration.</p>
+<h3>When I'm Not at Work</h3>
+<p>I'm often playing games, and occasionally <a href="https://www.twitch.tv/evrowe">streaming them on Twitch</a>. I have been on hiatus for a while due to recently having twins, but at some point I'll get back to it, hopefully later this year.</p>
+<p>I also write video game reviews for <a href="https://www.savingcontent.com">Saving Content</a>, and host the site's podcast, <a href="https://www.anchor.fm/quicksavepodcast">Quicksve</a> along with the site's Editor in Chief and my dear friend <a href="https://www.twitter.com/Hawk_SE">Scott Ellison II</a>.</p>
+<p>I love to cook, though I don't often have as much time for it as I'd like these days. I do bust out the occasional tasty meal when time allows it, though.</p>
+<p>I have fallen deeply in love with my espresso machine over the past few months and recently have learned how to pull shots correctly and am working on mastering my latte art, although it turns out the latter takes a whole lot of practice (who knew).</p>
+</div>
+</div>
+  </body>
+  <footer><p><sub>Using Eleventy v^1.0.1. | current page url: /</sub></p></footer>
+</html>

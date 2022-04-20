@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+    <title>Evan Rowe is On The Internet</title>
+    <script type="text/javascript">
+      const toggleTheme = function(e) {
+        if (e.target.className !== 'change-theme') return
+        e.preventDefault()
+        let body = document.querySelector('body')
+        let themeButton = document.querySelector('.change-theme')
+        if (body.className.includes('dark')) {
+          body.className = ''
+          themeButton.innerText = '🌒'
+        } else {
+          body.className = 'dark'
+          themeButton.innerText = '☀️'
+        }
+      }
+      document.addEventListener('click', toggleTheme)
+    </script>
+  </head>
+  
+  <body>
+    <header>
+      <div class="site-name">evan rowe <button class="change-theme">🌒</button></div>
+      <nav>
+        <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/posts">posts</a></li>
+          <!--li><a  aria-current="page"href="/about">about</a></li-->
+          <li><a href="/contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+<div class="wrapper page">
+  <div class="content">
+    <h2>I am still logged on, after all these years.</h2>
+<p>Somehow, I'm still on the internet, helping make the internet, and at this point it would be silly to stop.</p>
+<p>I like coffee. I drink too much of it. I like video games. I play them when I can. I even stream them, sometimes.</p>
+  </div>
+</div>
+  </body>
+  <footer><p><sub>Using Eleventy v^1.0.1. | current page url: /about/</sub></p></footer>
+</html>

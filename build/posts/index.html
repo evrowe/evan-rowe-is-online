@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+    <title>Evan&#39;s Cool Website</title>
+    <script type="text/javascript">
+      const toggleTheme = function(e) {
+        if (e.target.className !== 'change-theme') return
+        e.preventDefault()
+        let body = document.querySelector('body')
+        let themeButton = document.querySelector('.change-theme')
+        if (body.className.includes('dark')) {
+          body.className = ''
+          themeButton.innerText = '🌒'
+        } else {
+          body.className = 'dark'
+          themeButton.innerText = '☀️'
+        }
+      }
+      document.addEventListener('click', toggleTheme)
+    </script>
+  </head>
+  
+  <body>
+    <header>
+      <div class="site-name">evan rowe <button class="change-theme">🌒</button></div>
+      <nav>
+        <ul>
+          <li><a href="/">home</a></li>
+          <li><a  aria-current="page"href="/posts">posts</a></li>
+          <!--li><a href="/about">about</a></li-->
+          <li><a href="/contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+
+
+<div class="wrapper home">
+  <div class="content">
+    
+<h2>Posts</h2>
+    <ul><li><a href='/posts/test/'>This is a sample post</a> - 2022-04-19</li></ul>
+  </div>
+</div>
+  </body>
+  <footer><p><sub>Using Eleventy v^1.0.1. | current page url: /posts/</sub></p></footer>
+</html>

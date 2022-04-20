@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+    <title>Contact Me - Evan Rowe</title>
+    <script type="text/javascript">
+      const toggleTheme = function(e) {
+        if (e.target.className !== 'change-theme') return
+        e.preventDefault()
+        let body = document.querySelector('body')
+        let themeButton = document.querySelector('.change-theme')
+        if (body.className.includes('dark')) {
+          body.className = ''
+          themeButton.innerText = '🌒'
+        } else {
+          body.className = 'dark'
+          themeButton.innerText = '☀️'
+        }
+      }
+      document.addEventListener('click', toggleTheme)
+    </script>
+  </head>
+  
+  <body>
+    <header>
+      <div class="site-name">evan rowe <button class="change-theme">🌒</button></div>
+      <nav>
+        <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/posts">posts</a></li>
+          <!--li><a href="/about">about</a></li-->
+          <li><a  aria-current="page"href="/contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+<div class="wrapper page">
+  <div class="content">
+    <h2>You Can Find Me Online</h2>
+<p>When I <em>am</em> <code>very logged on</code>, you can find me in the following places:</p>
+<ul>
+<li>🐦 Twitter: <a href="https://www.twitter.com/ev_rowe">https://www.twitter.com/ev_rowe</a></li>
+<li>💼 LinkedIn: <a href="https://www.linkedin.com/in/evrowe">https://www.linkedin.com/in/evrowe</a></li>
+<li>⌨️ GitHub: <a href="https://www.github.com/evrowe">https://www.github.com/evrowe</a></li>
+<li>📸 Glass: <a href="https://glass.photo/evrowe">https://glass.photo/evrowe</a></li>
+<li>👾 Twitch: <a href="https://www.twitch.tv/evrowe">https://www.twitch.tv/evrowe</a></li>
+<li>🕹 Saving Content: <a href="https://www.savingcontent.com">https://www.savingcontent.com</a></li>
+<li>🎧 Quicksave: <a href="https://www.anchor.fm/quicksavepodcast">https://www.anchor.fm/quicksavepodcast</a></li>
+</ul>
+
+  </div>
+</div>
+  </body>
+  <footer><p><sub>Using Eleventy v^1.0.1. | current page url: /contact/</sub></p></footer>
+</html>
