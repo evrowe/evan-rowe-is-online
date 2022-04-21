@@ -25,6 +25,7 @@ Variables
   
   /* Synthvibe extensions */
   --color--deep-night-blue: 0, 0, 11;
+  --color--cornflower-dark: 38, 110, 227;
   /* End Synthvibe extensions */
   
   --body-color--light-mode: var(--color--very-dark-grey);
@@ -92,7 +93,7 @@ code {
 }
 
 .prompt {
-  color: rgb(var(--color--cornflower));
+  color: rgb(var(--color--cornflower-dark));
   margin-right: 5px;
 }
 
@@ -104,7 +105,7 @@ code {
 }
 
 .underline {
-  border-bottom: 1px solid rgb(var(--color--cornflower));
+  border-bottom: 1px solid rgb(var(--color--cornflower-dark));
   padding-bottom: 10px;
 }
 
