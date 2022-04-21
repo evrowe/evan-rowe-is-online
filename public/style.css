@@ -24,8 +24,9 @@ Variables
   /* End Snythvibe */
   
   /* Synthvibe extensions */
-  --color--deep-night-blue: 0, 0, 11;
   --color--cornflower-dark: 38, 110, 227;
+  --color--deep-night-blue: 0, 0, 11;
+  --color--purple-dark: 154, 54, 219;
   /* End Synthvibe extensions */
   
   --body-color--light-mode: var(--color--very-dark-grey);
@@ -55,7 +56,7 @@ Type Styles
 h1,
 h2,
 h3 {
-  color: rgb(var(--color--purple));
+  color: rgb(var(--color--purple-dark));
   font-family: var(--type--family--monospace);
 }
 
@@ -87,7 +88,7 @@ code {
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-name: cursor-blink;
-  color: rgb(var(--color--purple));
+  color: rgb(var(--color--purple-dark));
   font-size: 1.3em;
   opacity: 100%;
 }
@@ -130,7 +131,7 @@ body {
 }
 
 header {
-  background-color: rgb(var(--header-bg));
+  background-color: rgb(var(--color--midnight-blue));
   color: rgb(var(--header-color));
   display: grid;
   gap: 10px;
@@ -240,9 +241,10 @@ Theme Switcher
 Dark Mode
 **/
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   body {
     background: rgb(var(--color--midnight-blue));
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,5,32,1) 100%);
     color: rgb(var(--color--not-quite-white));
   }
   
@@ -282,7 +284,7 @@ Dark Mode
     color: rgb(var(--color--neon-pink));
     padding: 2px 4px;
   }
-} */
+}
 
 
 /**
