@@ -247,9 +247,8 @@ Dark Mode
     background: rgb(var(--color--midnight-blue));
     background: linear-gradient(0deg,
       rgba(var(--color--black),1) 0%,
-      rgba(var(--color--deep-night-blue),1) 35%,
-      rgba(var(--color--midnight-blue),1) 50%,
-      rgba(3,12,62,1) 70%,
+      rgba(var(--color--deep-night-blue),1) 20%,
+      rgba(var(--color--deep-night-blue),1) 60%,
       rgba(3,12,62,1) 100%
     );
     color: rgb(var(--color--not-quite-white));
