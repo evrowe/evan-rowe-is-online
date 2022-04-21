@@ -238,6 +238,11 @@ Theme Switcher
   width: 100%;
 }
 
+.to-top {
+  display: none;
+  visibility: hidden;
+}
+
 /**
 Dark Mode
 **/
@@ -245,12 +250,12 @@ Dark Mode
 @media (prefers-color-scheme: dark) {
   body {
     background: rgb(var(--color--midnight-blue));
-    background: linear-gradient(0deg,
+/*     background: linear-gradient(0deg,
       rgba(var(--color--black),1) 0%,
       rgba(var(--color--deep-night-blue),1) 20%,
       rgba(var(--color--deep-night-blue),1) 60%,
       rgba(3,12,62,1) 100%
-    );
+    ); */
     color: rgb(var(--color--not-quite-white));
   }
   
@@ -292,6 +297,18 @@ Dark Mode
   }
 }
 
+/**
+Mobile Devices
+**/
+
+@media only screen and (max-device-width: 600px) {
+  .to-top {
+    display: block;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+  }
+}
 
 /**
 Reduced Motion
