@@ -54,6 +54,7 @@ Type Styles
 h1,
 h2,
 h3 {
+  color: rgb(var(--color--purple));
   font-family: var(--type--family--monospace);
 }
 
@@ -85,12 +86,13 @@ code {
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-name: cursor-blink;
+  color: rgb(var(--color--purple));
   font-size: 1.3em;
   opacity: 100%;
 }
 
 .prompt {
-  color: rgb(var(--color--teal));
+  color: rgb(var(--color--cornflower));
   margin-right: 5px;
 }
 
@@ -102,7 +104,7 @@ code {
 }
 
 .underline {
-  border-bottom: 1px solid rgb(var(--color--teal));
+  border-bottom: 1px solid rgb(var(--color--cornflower));
   padding-bottom: 10px;
 }
 
@@ -237,7 +239,7 @@ Theme Switcher
 Dark Mode
 **/
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body {
     background: rgb(var(--color--midnight-blue));
     color: rgb(var(--color--not-quite-white));
@@ -261,14 +263,13 @@ Dark Mode
     color: rgb(var(--color--purple));
     text-shadow: 0 0 8px rgba(var(--color--white), .1);
   }
+
+  .prompt {
+    color: rgb(var(--color--teal));
+  }
   
   .underline {
     border-bottom-color: rgb(var(--color--teal));
-    padding-bottom: 10px;
-  }
-  
-  p {
-/*     text-shadow: 0 0 5px rgba(var(--color--white), .2); */
   }
   
   code {
@@ -280,7 +281,7 @@ Dark Mode
     color: rgb(var(--color--neon-pink));
     padding: 2px 4px;
   }
-}
+} */
 
 
 /**
