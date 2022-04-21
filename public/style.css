@@ -2,6 +2,7 @@
 Variables
 **/
 :root {
+  --color--black: 0, 0, 0;
   --color--blue-light: 88, 199, 234;
   --color--blue-dark: 26, 118, 147;
   --color--pink-light: 255, 106, 169;
@@ -244,7 +245,13 @@ Dark Mode
 @media (prefers-color-scheme: dark) {
   body {
     background: rgb(var(--color--midnight-blue));
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,5,32,1) 100%);
+    background: linear-gradient(0deg,
+      rgba(var(--color--black),1) 0%,
+      rgba(var(--color--deep-night-blue),1) 35%,
+      rgba(var(--color--midnight-blue),1) 50%,
+      rgba(3,12,62,1) 70%,
+      rgba(3,12,62,1) 100%
+    );
     color: rgb(var(--color--not-quite-white));
   }
   
