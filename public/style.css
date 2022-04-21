@@ -304,9 +304,18 @@ Mobile Devices
 @media only screen and (max-device-width: 600px) {
   .to-top {
     display: block;
+    visibility: visible;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000;
+    background-color: rgb(var(--color--purple));
+    border-radius: 3px;
+    box-shadow: 0 0 6px rgba(var(--color--white), .3);
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    vertical-align: middle;
   }
 }
 
