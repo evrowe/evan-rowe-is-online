@@ -3,30 +3,30 @@ Variables
 **/
 :root {
   /* TODO: Convert colors to RGB    */
-  --color--blue-light: #58c7ea;
-  --color--blue-dark: #1a7693;
-  --color--pink-light: #ff6aa9;
-  --color--pink-dark: #ce1d68;
+  --color--blue-light: 88, 199, 234;
+  --color--blue-dark: 26, 118, 147;
+  --color--pink-light: 255, 106, 169;
+  --color--pink-dark: 206, 29, 104;
   --color--white: 255, 255, 255;
   
   /* Synthvibe Colors */
-  --color--midnight-blue: #000520;
-  --color--not-quite-white: #DBDDDC;
-  --color--mid-grey: #676767;
-  --color--cornflower: #4972fc;
-  --color--cyan: #3cfffd;
-  --color--teal: #0bffd5;
-  --color--pink: #f563ea;
-  --color--neon-pink: #ff12af;
-  --color--purple: #b442fe;
+  --color--midnight-blue: 0, 5, 32;
+  --color--not-quite-white: 219, 221, 220;
+  --color--mid-grey: 103, 103, 103;
+  --color--cornflower: 73, 114, 252;
+  --color--cyan: 60, 255, 253;
+  --color--teal: 11, 255, 213;
+  --color--pink: 245, 99, 234;
+  --color--neon-pink: 255, 18, 175;
+  --color--purple: 180, 66, 254;
   /* End Snythvibe */
   
   /* Synthvibe extensions */
-  --color--deep-night-blue: #00000b;
+  --color--deep-night-blue: 0, 0, 11;
   /* End Synthvibe extensions */
   
-  --body-color--light-mode: #222222;
-  --body-color--dark-mode: #efefef;
+  --body-color--light-mode: 34, 34, 34;
+  --body-color--dark-mode: 239, 239, 239;
 
   --body-bg--light-mode: #efefef;
   --body-bg--dark-mode: #1e2935;
