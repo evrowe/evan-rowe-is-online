@@ -6,22 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/public/fonts.css" />
     <link rel="stylesheet" type="text/css" href="/public/style.css" />
     <title>{{ pageTitle or siteData.name }}</title>
-    <script type="text/javascript">
-      // check for current system-level theme
-      const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      
-      const toggleTheme = function(e) {
-        if (e.target.className !== 'slider') return
-        let body = document.querySelector('body')
-        
-        if (body.hasAttribute('data-theme') && body.attributes['data-theme'] == 'dark') {
-          prefersDarkMode ? body.setAttribute('data-theme', 'light') : body.removeAttribute('data-theme')
-        } else {
-          prefersDarkMode ? body.setAttribute('data-theme', 'dark') : body.removeAttribute('data-theme')
-        }
-      }
-      document.addEventListener('click', toggleTheme)
-    </script>
+    <script type="text/javascript" src="/public/hacking.js"></script>
   </head>
   
   <body>
