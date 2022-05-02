@@ -5,7 +5,7 @@ pageTitle: Evan Rowe is On The Internet
 <h1>
 Welcome to {{ siteData.name }}.
 </h1>
-<img class="big-image" src="https://cdn.glitch.global/bb2a64aa-d596-4b0f-839a-41f66ba7056e/Tron-Kevin-Flynn.jpg?v=1650396274623">
+<img class="big-image" src="https://cdn.glitch.global/bb2a64aa-d596-4b0f-839a-41f66ba7056e/Tron-Kevin-Flynn.jpg?v=1650396274623" alt="Kevin Flynn sitting at a terminal deep in the heart of the Encom R&D lab in 1982">
 
 <div class="content">
 <h2 class="underline"><span class="prompt" aria-hidden="true">➤</span>Greetings, Programs!<span class="cursor" aria-hidden="true">▮</span></h2>

@@ -11,11 +11,11 @@
   
   <body>
     <div class="grid-wrapper">
-      <header>
+      <header role="banner">
         <div class="site-name">evan-rowe.com
-          <span class="toggler">☀️<input type="checkbox" class="change-theme"/><div class="slider"></div>🌒</span>
+          <span class="toggler">☀️<input type="checkbox" class="change-theme" aria-label="change theme"/><div class="slider"></div>🌒</span>
         </div>
-        <nav>
+        <nav role="navigation">
           <ul>
             <li><a {% if page.url == '/' %} aria-current="page"{% endif %}href="/">home</a></li>
             <li><a {% if page.url.includes('posts') %} aria-current="page"{% endif %}href="/posts">posts</a></li>
@@ -25,7 +25,7 @@
         </nav>
       </header>
       {{ content | safe }}
-      <footer><p><sub><span class="prompt">➤</span>Using Eleventy v{{ pkg.dependencies["@11ty/eleventy"] }}. | created with <a href="https://glitch.com" target="_blank">glitch</a> | copyright &copy;2022 | current page url: <code>{{page.url}}</code></sub></p></footer>
+      <footer role="contentinfo"><p><sub><span class="prompt" aria-hidden="true">➤</span>Using Eleventy v{{ pkg.dependencies["@11ty/eleventy"] }}. | created with <a href="https://glitch.com" target="_blank">glitch</a> | copyright &copy;2022 | current page url: <code>{{page.url}}</code></sub></p></footer>
     </div>
     <div class="to-top">↟</div>
   </body>
