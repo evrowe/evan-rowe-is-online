@@ -12,7 +12,7 @@ Welcome to {{ siteData.name }}.
 
 _(Yes, I'm old.)_
 
-Hi, I'm Evan. I'm the Engineering Manager of the Consul UI team at [HashiCorp](https://www.hashicorp.com), and a longtime frontend and JavaScript engineer. (I'm hiring for [two](https://grnh.se/7716c1761us) [roles](https://grnh.se/8c1e8b4f1us) at the moment, by the way!) Formerly an Eng Manager and Software Engineer at [Fastly](https://www.fastly.com), I spent over ten years creating rich JavaScript applications using frameworks and tools like Ember.js, React, and even jQuery. While I've always had a passion for writing code, coaching people and running teams is what drives me today.
+Hi, I'm Evan. I'm the Engineering Manager of the Consul UI team at [HashiCorp](https://www.hashicorp.com), and a longtime frontend and JavaScript engineer. Formerly an Eng Manager and Software Engineer at [Fastly](https://www.fastly.com), I've spent over a decade creating rich JavaScript applications using frameworks and tools like Ember.js, React, and yes, even jQuery. While I've always had a passion for writing code, coaching people and running teams is what drives me today.
 
 I love taking a people-focused, sustainability driven approach to helping teams write software and deliver features; I firmly believe the happiness of a team directly correlates to the quality of its output, and prioritizing team health above all else is an amazingly effective path to getting great results. Shocker, I know.
 
