@@ -4,9 +4,15 @@ pageTitle: Now - Evan Rowe is On The Internet
 ---
 # Now
 
-## Doing
+### Currently
 
-## Playing
+- 🌲🏠 Living in Beaverton, OR with my family (two adults, three children, a dog, and a cat)
+- 🚙💨 Carting the children to too many activities
+- 👨🏻‍💻👯‍♀️ Managing a team of fantastic humans at HashiCorp
+- 🤔💭 Noting  how productive my days are when I'm not on Zoom
+- 🚶🏻☀️ Getting back into the habit of daily walks
+
+### Playing
 
 - Coccoon
 - Sea of Stars
@@ -15,12 +21,14 @@ pageTitle: Now - Evan Rowe is On The Internet
 - Cyberpunk 2077
 - Dave the Diver
 
-## Listening
+### Listening
 
 - Tycho: Dive, Awake, Epoch
 - Talking Heads: Stop Making Sense
 
-## Watching
+### Watching
 
 - Only Murders in the Building
-- 
+- Schitt's Creek
+- Sex Education
+- Steins;Gate
