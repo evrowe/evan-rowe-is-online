@@ -15,28 +15,28 @@ pageTitle: Now - Evan Rowe is On The Internet
 ## Playing
 
 <ul class="now-grid poster">
-  <li>Cocoon</li>
-  <li>Sea of Stars</li>
-  <li>Starfield</li>
-  <li>Metal Gear Solid V: The Phantom Pain</li>
-  <li>Cyberpunk 2077</li>
-  <li>Dave the Diver</li>
+  <li class="grid-item">Cocoon</li>
+  <li class="grid-item">Sea of Stars</li>
+  <li class="grid-item">Starfield</li>
+  <li class="grid-item">Metal Gear Solid V: The Phantom Pain</li>
+  <li class="grid-item">Cyberpunk 2077</li>
+  <li class="grid-item">Dave the Diver</li>
 </ul>
 
 ## Listening
 
 <ul class="now-grid square">
-  <li>Tycho: Dive, Awake, Epoch</li>
-  <li>Tycho: Dive, Awake, Epoch</li>
-  <li>Tycho: Dive, Awake, Epoch</li>
-  <li>Talking Heads: Stop Making Sense</li>
+  <li class="grid-item">Tycho: Dive, Awake, Epoch</li>
+  <li class="grid-item">Tycho: Dive, Awake, Epoch</li>
+  <li class="grid-item">Tycho: Dive, Awake, Epoch</li>
+  <li class="grid-item">Talking Heads: Stop Making Sense</li>
 </ul>
 
 ## Watching
 
 <ul class="now-grid poster">
-  <li>Only Murders in the Building</li>
-  <li>Schitt's Creek</li>
-  <li>Sex Education</li>
-  <li>Steins;Gate</li>
+  <li class="grid-item">Only Murders in the Building</li>
+  <li class="grid-item">Schitt's Creek</li>
+  <li class="grid-item">Sex Education</li>
+  <li class="grid-item">Steins;Gate</li>
 </ul>
