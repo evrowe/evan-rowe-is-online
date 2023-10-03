@@ -270,9 +270,19 @@ Now Page Formatting
 .wrapper.now ul.now-grid li.grid-item {
   flex-basis: 23%;
   list-style: none;
+  position: relative;
+}
+
+.wrapper.now ul.now-grid li.grid-item .item-link {
+  display: block;
+  color: rgb(var(--color--white));
   border: 1px solid;
   border-color: rgb(var(--color--neon-pink));
-  position: relative;
+}
+
+.wrapper.now ul.now-grid li.grid-item .item-link:hover {
+  color: rgb(var(--color--cyan));
+  border-color: rgb(var(--color--cyan));
 }
 
 .wrapper.now ul.now-grid li.grid-item .item-image {
@@ -284,18 +294,20 @@ Now Page Formatting
 .wrapper.now ul.now-grid li.grid-item .item-meta {
   display: block;
   position: absolute;
-  bottom: 0;
-  padding: 5px 0 10px;
+  bottom: 1px;
+  padding: 10px 0 10px;
   z-index: 100;
   text-shadow: 0px 0px 6px rgb(var(--color--black));
   font-weight: bold;
-  width: 100%;
+  width: calc(100% - 2px);
   background-color: rgba(0, 0, 0, .6);
 }
 
 .wrapper.now ul.now-grid li.grid-item .item-title {
   font-size: 1rem;
+  line-height: 1.2rem;
   display: block;
+  padding-bottom: 6px;
   padding-left: 10px;
 }
 
