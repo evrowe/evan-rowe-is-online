@@ -1,10 +1,12 @@
 const DISCOGS_API_BASE_URL = '//api.discogs.com'
+const MUSICBRAINZ_API_BASE_URL = '//musicbrainz.org/ws/2'
 const OPENCRITIC_API_BASE_URL = '//opencritic-api.p.rapidapi.com'
 const OPENCRITIC_API_KEY = 'fe3f31aacfmsh87285e4f8848e25p1724b4jsn22c2d47e2056'
 // const GAME_IDS = [8525,15580,15003,14907,15151,15125,9136,1887]
 // const GAME_IDS = [8525,15580,15003,14907]
 const GAME_IDS = [8525]
-const MUSIC_IDS = []
+const ALBUM_IDS = [27799152]
+const MB_ALBUM_IDS = ['a4ec34fc-699b-4c70-a077-658f9fa126a5']
 
 
 const nowData = {
@@ -35,7 +37,7 @@ async function fetchMusicData(albumID) {
       'User-Agent': 'evrowe.com now page music collection via client browser'
     }
   }
-  const response = await fetch(`${DISCOGS_API_BASE_URL}/releases/${albumID}`)
+  const response = await fetch(`${MUSICBRAINZ_API_BASE_URL}/release/${albumID}`)
   return await response.json()
 }
 
@@ -78,5 +80,13 @@ function buildItemHTML({itemName = '', imageURL = '', resourceURL = '', itemAuth
       itemAuthor: game.Companies['0']['name']
     })
     document.querySelector('.now-grid.playing').appendChild(itemHTML)
+  })
+  
+  MB_ALBUM_IDS.forEach(async function(id){
+    const album = await fetchMusicData(id)
+    const itemHTML = buildItemHTML({
+      itemName: album.title,
+      imageURL: ``,
+    })
   })
 })()
