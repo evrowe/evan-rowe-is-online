@@ -44,5 +44,7 @@ pageTitle: Now - Evan Rowe is On The Internet
 
 <script type="text/javascript" src="/public/now-data.js"></script>
 <script type="text/javascript">
-  insertGamesHTML()
+  (async function() {
+    await buildGamesHTML()
+  })()
 </script>

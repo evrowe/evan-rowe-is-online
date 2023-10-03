@@ -23,12 +23,12 @@ async function fetchGameData(gameID) {
 	  }
   };
   const response = await fetch(`https://${OPENCRITIC_API_BASE_URL}/game/${gameID}`, options)
-  return response.json()
+  return await response.json()
 }
 
-async function fetchGamesData(gameIDs = []) {
+function fetchGamesData(gameIDs = []) {
   if (!(gameIDs instanceof Array) || !gameIDs.length) return []
-  return await gameIDs.map(async function(id, index) {
+  return gameIDs.map(async function(id, index) {
     const game = await fetchGameData(id)
     return {
       id,
@@ -46,7 +46,7 @@ async function buildGamesHTML (gameIDs = []) {
   
   console.log('data:', data)
   
-  return data.map(function(game) {
+  return data.forEach(async function(game) {
     console.log('game:', game)
     const outerLI = document.createElement('li')
     const image = document.createElement('img')
@@ -63,13 +63,14 @@ async function buildGamesHTML (gameIDs = []) {
     outerLI.appendChild(image)
     outerLI.appendChild(title)
     outerLI.appendChild(developer)
-    return outerLI
+    document.querySelector('.now-grid.playing').appendChild(outerLI)
+    return 
   })
 }
 
 async function insertGamesHTML() {
   const gamesHTML = await buildGamesHTML(nowData.playing)
-  gamesHTML.forEach(function(item) {
+  gamesHTML.forEach(async function(item) {
     console.log('item:', item)
     document.querySelector('.now-grid.playing').appendChild(item)
   })
