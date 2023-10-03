@@ -15,13 +15,13 @@ pageTitle: Now - Evan Rowe is On The Internet
 ## Playing
 
 <ul class="now-grid playing poster">
-  <li class="grid-item">Cocoon</li>
+<!--   <li class="grid-item">Cocoon</li>
   <li class="grid-item">Sea of Stars</li>
   <li class="grid-item">Starfield</li>
   <li class="grid-item">Metal Gear Solid V: The Phantom Pain</li>
   <li class="grid-item">Cyberpunk 2077</li>
   <li class="grid-item">Dave the Diver</li>
-  <li class="grid-item">Armored Core VI</li>
+  <li class="grid-item">Armored Core VI</li> -->
 </ul>
 
 ## Listening
@@ -42,7 +42,7 @@ pageTitle: Now - Evan Rowe is On The Internet
   <li class="grid-item">Steins;Gate</li>
 </ul>
 
-<script type="text/javascript" src="/public/now-data.js"></script>
+<!-- <script type="text/javascript" src="/public/now-data.js"></script>
 <script type="text/javascript">
   insertGamesHTML()
-</script>
+</script> -->

@@ -1,7 +1,8 @@
 const OPENCRITIC_API_BASE_URL = 'opencritic-api.p.rapidapi.com'
 const OPENCRITIC_API_KEY = 'fe3f31aacfmsh87285e4f8848e25p1724b4jsn22c2d47e2056'
 // const GAME_IDS = [8525,15580,15003,14907,15151,15125,9136,1887]
-const GAME_IDS = [8525,15580,15003,14907]
+// const GAME_IDS = [8525,15580,15003,14907]
+const GAME_IDS = [8525]
 
 
 const nowData = {
@@ -22,8 +23,7 @@ async function fetchGameData(gameID) {
 	  }
   };
   const response = await fetch(`https://${OPENCRITIC_API_BASE_URL}/game/${gameID}`, options)
-  const game = await response.json()
-  return game
+  return response.json()
 }
 
 async function fetchGamesData(gameIDs = []) {
@@ -34,7 +34,7 @@ async function fetchGamesData(gameIDs = []) {
       id,
       image: game.images.box.sm,
       name: game.name,
-      developer: game.companies[0].name
+      developer: game.Companies['0']['name']
     }
   })
 }
@@ -45,6 +45,7 @@ async function buildGamesHTML (gameIDs = []) {
   if (!data.length) return
   
   return data.map(function(game) {
+    console.log('game:', game)
     const outerLI = document.createElement('li')
     const image = document.createElement('img')
     const title = document.createElement('span')
