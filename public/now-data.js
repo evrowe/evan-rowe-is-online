@@ -44,6 +44,8 @@ async function buildGamesHTML (gameIDs = []) {
   const data = await fetchGamesData(gameIDs)
   if (!data.length) return
   
+  console.log('data:', data)
+  
   return data.map(function(game) {
     console.log('game:', game)
     const outerLI = document.createElement('li')
@@ -68,6 +70,7 @@ async function buildGamesHTML (gameIDs = []) {
 async function insertGamesHTML() {
   const gamesHTML = await buildGamesHTML(nowData.playing)
   gamesHTML.forEach(function(item) {
+    console.log('item:', item)
     document.querySelector('.now-grid.playing').appendChild(item)
   })
 }
