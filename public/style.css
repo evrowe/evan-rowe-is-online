@@ -261,14 +261,14 @@ Now Page Formatting
   flex-wrap: wrap;
 /*   display: inline-grid; */
 /*   grid-template-columns: repeat(4,minmax(0,1fr)); */
-  gap: .5rem;
+  gap: .7rem;
 
   margin-left: 0;
   padding: 0;
 }
 
 .wrapper.now ul.now-grid li.grid-item {
-  flex-basis: 22%;
+  flex-basis: 24%;
   list-style: none;
   position: relative;
 }
