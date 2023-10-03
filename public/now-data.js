@@ -76,9 +76,27 @@ async function insertGamesHTML() {
   })
 }
 
-(async bigUglyFunction() {
+(async function() {
   const gameIDs = GAME_IDS
   gameIDs.forEach(async function(id) {
-    fetchGameData()
+    const game = await fetchGameData(id)
+    const outerLI = document.createElement('li')
+    const image = document.createElement('img')
+    const title = document.createElement('span')
+    const developer = document.createElement('span')
+    
+    outerLI.classList.add('grid-item')
+    image.setAttribute('src', `//img.opencritic.com/${game.images.box.sm}`)
+    image.classList.add('item-image')
+    title.innerText=game.name
+    title.classList.add('item-title')
+    developer.innerText = game.Companies['0']['name']
+    developer.classList.add('item-author')
+  
+    outerLI.appendChild(image)
+    outerLI.appendChild(title)
+    outerLI.appendChild(developer)
+  
+    document.querySelector('.now-grid.playing').appendChild(outerLI)
   })
-})
+})()
