@@ -1,10 +1,10 @@
 ---
-layout: layouts/page.njk
+layout: layouts/now.njk
 pageTitle: Now - Evan Rowe is On The Internet
 ---
 # Now
 
-### Currently
+## Currently
 
 - 🌲🏠 Living in Beaverton, OR with my family (two adults, three children, a dog, and a cat)
 - 🚙💨 Carting the children to too many activities
@@ -12,23 +12,31 @@ pageTitle: Now - Evan Rowe is On The Internet
 - 🤔💭 Noting  how productive my days are when I'm not on Zoom
 - 🚶🏻☀️ Getting back into the habit of daily walks
 
-### Playing
+## Playing
 
-- Coccoon
-- Sea of Stars
-- Starfield
-- Metal Gear Solid V: The Phantom Pain
-- Cyberpunk 2077
-- Dave the Diver
+<ul class="now-grid poster">
+  <li>Cocoon</li>
+  <li>Sea of Stars</li>
+  <li>Starfield</li>
+  <li>Metal Gear Solid V: The Phantom Pain</li>
+  <li>Cyberpunk 2077</li>
+  <li>Dave the Diver</li>
+</ul>
 
-### Listening
+## Listening
 
-- Tycho: Dive, Awake, Epoch
-- Talking Heads: Stop Making Sense
+<ul class="now-grid square">
+  <li>Tycho: Dive, Awake, Epoch</li>
+  <li>Tycho: Dive, Awake, Epoch</li>
+  <li>Tycho: Dive, Awake, Epoch</li>
+  <li>Talking Heads: Stop Making Sense</li>
+</ul>
 
-### Watching
+## Watching
 
-- Only Murders in the Building
-- Schitt's Creek
-- Sex Education
-- Steins;Gate
+<ul class="now-grid poster">
+  <li>Only Murders in the Building</li>
+  <li>Schitt's Creek</li>
+  <li>Sex Education</li>
+  <li>Steins;Gate</li>
+</ul>

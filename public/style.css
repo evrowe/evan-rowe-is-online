@@ -244,6 +244,24 @@ Theme Switcher
 }
 
 /**
+Now Page Formatting
+**/
+
+.wrapper.now h1 {
+  font-size: 3rem;
+}
+
+.wrapper.now h2 {
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+.wrapper.now ul.now-grid {
+  display: grid;
+  column-gap: .1rem;
+}
+
+/**
 Dark Mode
 **/
 
