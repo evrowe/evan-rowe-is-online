@@ -26,7 +26,11 @@ async function fetchGameData(gameID) {
   return await response.json()
 }
 
-function buildItemHTML(itemName = '', imageURL = '', resourceURL, authorName) {
+async function fetchMusicData(albumID) {
+  
+}
+
+function buildItemHTML({itemName = '', imageURL = '', resourceURL = '', itemAuthor = ''}) {
   const outerLI = document.createElement('li')
   const meta = document.createElement('div')
   const image = document.createElement('img')
@@ -37,11 +41,12 @@ function buildItemHTML(itemName = '', imageURL = '', resourceURL, authorName) {
   outerLI.classList.add('grid-item')
   link.setAttribute('href', resourceURL)
   link.classList.add('item-link')
+  meta.classList.add('item-meta')
   image.setAttribute('src', imageURL)
   image.classList.add('item-image')
   title.innerText = itemName
   title.classList.add('item-title')
-  author.innerText = authorName
+  author.innerText = itemAuthor
   author.classList.add('item-author')
   
   meta.appendChild(title)
@@ -55,38 +60,14 @@ function buildItemHTML(itemName = '', imageURL = '', resourceURL, authorName) {
 
 // fetch and display games
 (async function() {
-  const gameIDs = GAME_IDS
-//   gameIDs.forEach(async function(id) {
-//     buildItemHTML(game.name, `//img.opencritic.com/${game.images.box.sm}`, `//www.opencritic.com/game/${game.id}`, game.Companies['0']['name'])
-    
-//     const game = await fetchGameData(id)
-//     const outerLI = document.createElement('li')
-//     const meta = document.createElement('div')
-//     const image = document.createElement('img')
-//     const title = document.createElement('span')
-//     const developer = document.createElement('span')
-//     const link = document.createElement('a')
-    
-//     outerLI.classList.add('grid-item')
-//     link.setAttribute('href', `//www.opencritic.com/game/${game.id}`)
-//     link.classList.add('item-link')
-//     image.setAttribute('src', `//img.opencritic.com/${game.images.box.sm}`)
-//     image.classList.add('item-image')
-//     title.innerText = game.name
-//     title.classList.add('item-title')
-//     developer.innerText = game.Companies['0']['name']
-//     developer.classList.add('item-author')
-  
-//     meta.appendChild(title)
-//     meta.appendChild(developer)
-//     link.appendChild(image)
-//     link.appendChild(meta)
-//     outerLI.appendChild(link)
-//     document.querySelector('.now-grid.playing').appendChild(outerLI)
-//   })
-  gameIDs.forEach(async function(id) {
+  GAME_IDS.forEach(async function(id) {
     const game = await fetchGameData(id)
-    const itemHTML = buildItemHTML(game.name, `//img.opencritic.com/${game.images.box.sm}`, `//www.opencritic.com/game/${game.id}`, game.Companies['0']['name'])
+    const itemHTML = buildItemHTML({
+      itemName: game.name,
+      imageURL: `//img.opencritic.com/${game.images.box.og}`,
+      resourceURL: `//www.opencritic.com/game/${game.id}`,
+      itemAuthor: game.Companies['0']['name']
+    })
     document.querySelector('.now-grid.playing').appendChild(itemHTML)
   })
 })()
