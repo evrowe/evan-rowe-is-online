@@ -247,6 +247,11 @@ Theme Switcher
 Now Page Formatting
 **/
 
+.wrapper.now {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
 .wrapper.now h1 {
   font-size: 3rem;
 }

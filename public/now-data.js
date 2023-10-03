@@ -72,16 +72,16 @@ function buildItemHTML({itemName = '', imageURL = '', resourceURL = '', itemAuth
 
 // fetch and display games
 (async function() {
-  // GAME_IDS.forEach(async function(id) {
-  //   const game = await fetchGameData(id)
-  //   const itemHTML = buildItemHTML({
-  //     itemName: game.name,
-  //     imageURL: `//img.opencritic.com/${game.images.box.og}`,
-  //     resourceURL: `//www.opencritic.com/game/${game.id}`,
-  //     itemAuthor: game.Companies['0']['name']
-  //   })
-  //   document.querySelector('.now-grid.playing').appendChild(itemHTML)
-  // })
+  GAME_IDS.forEach(async function(id) {
+    const game = await fetchGameData(id)
+    const itemHTML = buildItemHTML({
+      itemName: game.name,
+      imageURL: `//img.opencritic.com/${game.images.box.og}`,
+      resourceURL: `//www.opencritic.com/game/${game.id}`,
+      itemAuthor: game.Companies['0']['name']
+    })
+    document.querySelector('.now-grid.playing').appendChild(itemHTML)
+  })
   
   MB_ALBUM_IDS.forEach(async function(id){
     const album = await fetchMusicData(id)
