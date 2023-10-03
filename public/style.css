@@ -285,19 +285,25 @@ Now Page Formatting
   display: block;
   position: absolute;
   bottom: 0;
-  padding-left: 10px;
-  padding-bottom: 10px;
+  padding: 5px 0 10px;
   z-index: 100;
+  text-shadow: 0px 0px 6px rgb(var(--color--black));
+  font-weight: bold;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .6);
 }
 
 .wrapper.now ul.now-grid li.grid-item .item-title {
   font-size: 1rem;
   display: block;
+  padding-left: 10px;
 }
 
 .wrapper.now ul.now-grid li.grid-item .item-author {
   font-size: .8rem;
   display: block;
+  line-height: 1rem;
+  padding-left: 10px;
 }
 
 /**
