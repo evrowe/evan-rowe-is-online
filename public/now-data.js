@@ -34,10 +34,11 @@ async function fetchMusicData(albumID) {
   const options = {
     method: 'GET',
     headers: {
+      'Accept': 'application/json',
       'User-Agent': 'evrowe.com now page music collection via client browser'
     }
   }
-  const response = await fetch(`${MUSICBRAINZ_API_BASE_URL}/release/${albumID}`)
+  const response = await fetch(`${MUSICBRAINZ_API_BASE_URL}/release/${albumID}?inc=artist-credits`, options)
   return await response.json()
 }
 
@@ -71,22 +72,25 @@ function buildItemHTML({itemName = '', imageURL = '', resourceURL = '', itemAuth
 
 // fetch and display games
 (async function() {
-  GAME_IDS.forEach(async function(id) {
-    const game = await fetchGameData(id)
-    const itemHTML = buildItemHTML({
-      itemName: game.name,
-      imageURL: `//img.opencritic.com/${game.images.box.og}`,
-      resourceURL: `//www.opencritic.com/game/${game.id}`,
-      itemAuthor: game.Companies['0']['name']
-    })
-    document.querySelector('.now-grid.playing').appendChild(itemHTML)
-  })
+  // GAME_IDS.forEach(async function(id) {
+  //   const game = await fetchGameData(id)
+  //   const itemHTML = buildItemHTML({
+  //     itemName: game.name,
+  //     imageURL: `//img.opencritic.com/${game.images.box.og}`,
+  //     resourceURL: `//www.opencritic.com/game/${game.id}`,
+  //     itemAuthor: game.Companies['0']['name']
+  //   })
+  //   document.querySelector('.now-grid.playing').appendChild(itemHTML)
+  // })
   
   MB_ALBUM_IDS.forEach(async function(id){
     const album = await fetchMusicData(id)
     const itemHTML = buildItemHTML({
       itemName: album.title,
       imageURL: ``,
+      resourceURL: ``,
+      itemAuthor: album['artist-credit'][0].artist.name
     })
+    document.querySelector('.now-grid.listening').appendChild(itemHTML)
   })
 })()
