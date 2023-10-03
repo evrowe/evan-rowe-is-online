@@ -26,7 +26,7 @@ async function fetchGameData(gameID) {
   return await response.json()
 }
 
-function fetchGamesData(gameIDs = []) {
+async function fetchGamesData(gameIDs = []) {
   if (!(gameIDs instanceof Array) || !gameIDs.length) return []
   return gameIDs.map(async function(id, index) {
     const game = await fetchGameData(id)
@@ -46,7 +46,7 @@ async function buildGamesHTML (gameIDs = []) {
   
   console.log('data:', data)
   
-  return data.forEach(async function(game) {
+  return data.forEach(function(game) {
     console.log('game:', game)
     const outerLI = document.createElement('li')
     const image = document.createElement('img')
@@ -63,14 +63,14 @@ async function buildGamesHTML (gameIDs = []) {
     outerLI.appendChild(image)
     outerLI.appendChild(title)
     outerLI.appendChild(developer)
-    document.querySelector('.now-grid.playing').appendChild(outerLI)
-    return 
+    
+    return outerLI
   })
 }
 
 async function insertGamesHTML() {
   const gamesHTML = await buildGamesHTML(nowData.playing)
-  gamesHTML.forEach(async function(item) {
+  return gamesHTML.forEach(function(item) {
     console.log('item:', item)
     document.querySelector('.now-grid.playing').appendChild(item)
   })
