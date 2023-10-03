@@ -1,12 +1,20 @@
 {
   "name": "Evan's Cool Website",
   "now": {
+    "listening-comment": "",
     "listening": [
       
     ],
+    "playing-comment": "a list of internet game database IDs, to populate data from the IGDB API at https://igdb.com",
     "playing": [
-      
+      1877,
+      204627,
+      131890,
+      1985,
+      96437,
+      203722
     ],
+    "watching-comment": "",
     "watching": [
       
     ]
