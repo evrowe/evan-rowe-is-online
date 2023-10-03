@@ -24,6 +24,42 @@ pageTitle: Now - Evan Rowe is On The Internet
       </div>
     </a>
   </li>
+  <li class="grid-item">
+    <a class="item-link" href="" title="CYBERPUNK 2077: Phantom Liberty">
+      <img src="https://cdn.glitch.global/bb2a64aa-d596-4b0f-839a-41f66ba7056e/mDW7h2zB.jpg?v=1696357714699" class="item-image" alt="Cyberpunk 2077 cover image"/>
+      <div class="item-meta">
+        <span class="item-title">CYBERPUNK 2077: Phantom Liberty</span>
+        <span class="item-author">CD Projekt Red</span>
+      </div>
+    </a>
+  </li>
+  <li class="grid-item">
+    <a class="item-link" href="" title="CYBERPUNK 2077: Phantom Liberty">
+      <img src="https://cdn.glitch.global/bb2a64aa-d596-4b0f-839a-41f66ba7056e/mDW7h2zB.jpg?v=1696357714699" class="item-image" alt="Cyberpunk 2077 cover image"/>
+      <div class="item-meta">
+        <span class="item-title">CYBERPUNK 2077: Phantom Liberty</span>
+        <span class="item-author">CD Projekt Red</span>
+      </div>
+    </a>
+  </li>
+  <li class="grid-item">
+    <a class="item-link" href="" title="CYBERPUNK 2077: Phantom Liberty">
+      <img src="https://cdn.glitch.global/bb2a64aa-d596-4b0f-839a-41f66ba7056e/mDW7h2zB.jpg?v=1696357714699" class="item-image" alt="Cyberpunk 2077 cover image"/>
+      <div class="item-meta">
+        <span class="item-title">CYBERPUNK 2077: Phantom Liberty</span>
+        <span class="item-author">CD Projekt Red</span>
+      </div>
+    </a>
+  </li>
+  <li class="grid-item">
+    <a class="item-link" href="" title="CYBERPUNK 2077: Phantom Liberty">
+      <img src="https://cdn.glitch.global/bb2a64aa-d596-4b0f-839a-41f66ba7056e/mDW7h2zB.jpg?v=1696357714699" class="item-image" alt="Cyberpunk 2077 cover image"/>
+      <div class="item-meta">
+        <span class="item-title">CYBERPUNK 2077: Phantom Liberty</span>
+        <span class="item-author">CD Projekt Red</span>
+      </div>
+    </a>
+  </li>
 <!--   <li class="grid-item">Cocoon</li>
   <li class="grid-item">Sea of Stars</li>
   <li class="grid-item">Starfield</li>

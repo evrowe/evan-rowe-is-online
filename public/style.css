@@ -268,7 +268,7 @@ Now Page Formatting
 }
 
 .wrapper.now ul.now-grid li.grid-item {
-  flex-basis: 23%;
+  flex-basis: 22%;
   list-style: none;
   position: relative;
 }
