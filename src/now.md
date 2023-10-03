@@ -42,9 +42,9 @@ pageTitle: Now - Evan Rowe is On The Internet
   <li class="grid-item">Steins;Gate</li>
 </ul>
 
-<script type="text/javascript" src="/public/now-data.js"></script>
+<!-- <script type="text/javascript" src="/public/now-data.js"></script>
 <script type="text/javascript">
   (async function() {
     await insertGamesHTML()
   })()
-</script>
+</script> -->

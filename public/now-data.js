@@ -75,3 +75,10 @@ async function insertGamesHTML() {
     document.querySelector('.now-grid.playing').appendChild(item)
   })
 }
+
+(async bigUglyFunction() {
+  const gameIDs = GAME_IDS
+  gameIDs.forEach(async function(id) {
+    fetchGameData()
+  })
+})
