@@ -14,7 +14,7 @@ pageTitle: Now - Evan Rowe is On The Internet
 
 ## Playing
 
-<ul class="now-grid poster">
+<ul class="now-grid playing poster">
   <li class="grid-item">Cocoon</li>
   <li class="grid-item">Sea of Stars</li>
   <li class="grid-item">Starfield</li>
@@ -26,7 +26,7 @@ pageTitle: Now - Evan Rowe is On The Internet
 
 ## Listening
 
-<ul class="now-grid square">
+<ul class="now-grid listening square">
   <li class="grid-item">Tycho: Dive</li>
   <li class="grid-item">Tycho: Awake</li>
   <li class="grid-item">Tycho: Epoch</li>
@@ -35,9 +35,14 @@ pageTitle: Now - Evan Rowe is On The Internet
 
 ## Watching
 
-<ul class="now-grid poster">
+<ul class="now-grid watching poster">
   <li class="grid-item">Only Murders in the Building</li>
   <li class="grid-item">Schitt's Creek</li>
   <li class="grid-item">Sex Education</li>
   <li class="grid-item">Steins;Gate</li>
 </ul>
+
+<script type="text/javascript" src="/public/now-data.js"></script>
+<script type="text/javascript">
+  insertGamesHTML()
+</script>

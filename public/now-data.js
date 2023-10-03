@@ -1,11 +1,14 @@
 const OPENCRITIC_API_BASE_URL = 'opencritic-api.p.rapidapi.com'
 const OPENCRITIC_API_KEY = 'fe3f31aacfmsh87285e4f8848e25p1724b4jsn22c2d47e2056'
+// const GAME_IDS = [8525,15580,15003,14907,15151,15125,9136,1887]
+const GAME_IDS = [8525,15580,15003,14907]
+
 
 const nowData = {
   'listening-comment': '',
   'listening': [],
   'playing-comment': 'a list of OpenCritic game IDs, to populate data from the OpenCritic API at opencritic-api.p.rapidapi.com',
-  'playing': [8525,15580,15003,14907,15151,15125,9136,1887],
+  'playing': GAME_IDS,
   'watching-comment': '',
   'watching': []
 }
@@ -41,7 +44,7 @@ async function buildGamesHTML (gameIDs = []) {
   const data = await fetchGamesData(gameIDs)
   if (!data.length) return
   
-  const gamesHTML = data.map(function(game) {
+  return data.map(function(game) {
     const outerLI = document.createElement('li')
     const image = document.createElement('img')
     const title = document.createElement('span')
@@ -49,6 +52,7 @@ async function buildGamesHTML (gameIDs = []) {
     
     outerLI.classList.add('grid-item')
     image.setAttribute('src', game.image)
+    image.classList.add('item-image')
     title.innerText=game.name
     title.classList.add('item-title')
     developer.innerText=game.developer
@@ -57,5 +61,12 @@ async function buildGamesHTML (gameIDs = []) {
     outerLI.appendChild(title)
     outerLI.appendChild(developer)
     return outerLI
+  })
+}
+
+async function insertGamesHTML() {
+  const gamesHTML = await buildGamesHTML(nowData.playing)
+  gamesHTML.forEach(function(item) {
+    document.querySelector('.now-grid.playing').appendChild(item)
   })
 }
