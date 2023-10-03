@@ -21,14 +21,15 @@ pageTitle: Now - Evan Rowe is On The Internet
   <li class="grid-item">Metal Gear Solid V: The Phantom Pain</li>
   <li class="grid-item">Cyberpunk 2077</li>
   <li class="grid-item">Dave the Diver</li>
+  <li class="grid-item">Armored Core VI</li>
 </ul>
 
 ## Listening
 
 <ul class="now-grid square">
-  <li class="grid-item">Tycho: Dive, Awake, Epoch</li>
-  <li class="grid-item">Tycho: Dive, Awake, Epoch</li>
-  <li class="grid-item">Tycho: Dive, Awake, Epoch</li>
+  <li class="grid-item">Tycho: Dive</li>
+  <li class="grid-item">Tycho: Awake</li>
+  <li class="grid-item">Tycho: Epoch</li>
   <li class="grid-item">Talking Heads: Stop Making Sense</li>
 </ul>
 

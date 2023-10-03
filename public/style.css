@@ -257,13 +257,18 @@ Now Page Formatting
 }
 
 .wrapper.now ul.now-grid {
+/*   display: flex; */
+  /*   flex-wrap: wrap; */
   display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: .5rem;
-  row-gap: .5rem;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: .5rem;
+
+  margin-left: 0;
+  padding: 0;
 }
 
 .wrapper.now ul.now-grid li.grid-item {
+/*   flex-basis: 23%; */
   list-style: none;
   border: 1px solid;
   border-color: rgb(var(--color--neon-pink));
