@@ -24,7 +24,7 @@ async function fetchGameData(gameID) {
 }
 
 async function fetchGamesData(gameIDs = []) {
-  if (!(gameIDs instanceof Array) || !gameIDs.length) return
+  if (!(gameIDs instanceof Array) || !gameIDs.length) return []
   return await gameIDs.map(async function(id, index) {
     const game = await fetchGameData(id)
     return {
@@ -36,7 +36,26 @@ async function fetchGamesData(gameIDs = []) {
   })
 }
 
-async function buildGamesHTML () {
-  await fetchGamesData(nowData.playing)
-  if 
+async function buildGamesHTML (gameIDs = []) {
+  if (!(gameIDs instanceof Array) || !gameIDs.length) return []
+  const data = await fetchGamesData(gameIDs)
+  if (!data.length) return
+  
+  const gamesHTML = data.map(function(game) {
+    const outerLI = document.createElement('li')
+    const image = document.createElement('img')
+    const title = document.createElement('span')
+    const developer = document.createElement('span')
+    
+    outerLI.classList.add('grid-item')
+    image.setAttribute('src', game.image)
+    title.innerText=game.name
+    title.classList.add('item-title')
+    developer.innerText=game.developer
+    developer.classList.add('item-author')
+    outerLI.appendChild(image)
+    outerLI.appendChild(title)
+    outerLI.appendChild(developer)
+    return outerLI
+  })
 }
