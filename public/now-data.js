@@ -1,8 +1,10 @@
-const OPENCRITIC_API_BASE_URL = 'opencritic-api.p.rapidapi.com'
+const DISCOGS_API_BASE_URL = '//api.discogs.com'
+const OPENCRITIC_API_BASE_URL = '//opencritic-api.p.rapidapi.com'
 const OPENCRITIC_API_KEY = 'fe3f31aacfmsh87285e4f8848e25p1724b4jsn22c2d47e2056'
 // const GAME_IDS = [8525,15580,15003,14907,15151,15125,9136,1887]
 // const GAME_IDS = [8525,15580,15003,14907]
 const GAME_IDS = [8525]
+const MUSIC_IDS = []
 
 
 const nowData = {
@@ -21,13 +23,20 @@ async function fetchGameData(gameID) {
 		  'X-RapidAPI-Key': OPENCRITIC_API_KEY,
 		  'X-RapidAPI-Host': OPENCRITIC_API_BASE_URL
 	  }
-  };
-  const response = await fetch(`https://${OPENCRITIC_API_BASE_URL}/game/${gameID}`, options)
+  }
+  const response = await fetch(`${OPENCRITIC_API_BASE_URL}/game/${gameID}`, options)
   return await response.json()
 }
 
 async function fetchMusicData(albumID) {
-  
+  const options = {
+    method: 'GET',
+    headers: {
+      'User-Agent': 'evrowe.com now page music collection via client browser'
+    }
+  }
+  const response = await fetch(`${DISCOGS_API_BASE_URL}/releases/${albumID}`)
+  return await response.json()
 }
 
 function buildItemHTML({itemName = '', imageURL = '', resourceURL = '', itemAuthor = ''}) {
