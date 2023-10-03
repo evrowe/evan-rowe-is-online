@@ -272,6 +272,32 @@ Now Page Formatting
   list-style: none;
   border: 1px solid;
   border-color: rgb(var(--color--neon-pink));
+  position: relative;
+}
+
+.wrapper.now ul.now-grid li.grid-item .item-image {
+  display: block;
+  width: 100%;
+  z-index: 50;
+}
+
+.wrapper.now ul.now-grid li.grid-item .item-meta {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  z-index: 100;
+}
+
+.wrapper.now ul.now-grid li.grid-item .item-title {
+  font-size: 1rem;
+  display: block;
+}
+
+.wrapper.now ul.now-grid li.grid-item .item-author {
+  font-size: .8rem;
+  display: block;
 }
 
 /**

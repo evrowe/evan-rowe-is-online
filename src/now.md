@@ -17,8 +17,10 @@ pageTitle: Now - Evan Rowe is On The Internet
 <ul class="now-grid playing poster">
   <li class="grid-item">
     <img src="https://cdn.glitch.global/bb2a64aa-d596-4b0f-839a-41f66ba7056e/mDW7h2zB.jpg?v=1696357714699" class="item-image" alt="Cyberpunk 2077 cover image"/>
-    <span class="item-title">CYBERPUNK 2077</span>
-    <span class="item-author">CD Projekt Red</span>
+    <div class="item-meta">
+      <span class="item-title">CYBERPUNK 2077</span>
+      <span class="item-author">CD Projekt Red</span>
+    </div>
   </li>
 <!--   <li class="grid-item">Cocoon</li>
   <li class="grid-item">Sea of Stars</li>
