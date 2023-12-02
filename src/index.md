@@ -12,19 +12,19 @@ Welcome to {{ siteData.name }}.
 
 _(Yes, I'm old.)_
 
-Hi, I'm Evan. I'm the Engineering Manager of the Consul UI team at [HashiCorp](https://www.hashicorp.com), and a longtime frontend and JavaScript engineer. Formerly an Eng Manager and Software Engineer at [Fastly](https://www.fastly.com), I've spent over a decade creating rich JavaScript applications using frameworks and tools like Ember.js, React, and yes, even jQuery. While I've always had a passion for writing code, coaching people and running teams is what drives me today.
+Hi, I'm Evan. I'm an Engineering Manager at [SDVI](https://sdvi.com), and a longtime frontend and JavaScript engineer. Formerly an Eng Manager at [HashiCorp](https://www.hashicorp.com) and at [Fastly](https://www.fastly.com), I've spent the past four years and change managing teams, and over a decade creating rich JavaScript applications. While I've always had a passion for writing code, coaching people and helping teams do their best work is what drives me today.
 
-I take a people-focused, sustainability driven approach to helping teams write software and deliver features; I firmly believe the happiness of a team directly correlates to the quality of its output, and prioritizing team health above all else is an amazingly effective path to getting great results. Shocker, I know.
+I take a people-focused approach to helping teams write software and deliver features; I firmly believe the happiness of a team directly correlates to the quality of its output, and prioritizing team health above all else is an amazingly effective path to getting great results. Shocker, I know.
 
-This is a ✨ new ✨ personal website to replace the old one I've had for like six years. It's very much a WIP but I've learned to embrace iteration.
+This website is still very much a WIP but I'm a big fan of iteration and trying stuff out.
 
 ### When I'm Not at Work
 
-I'm often playing games, and occasionally [streaming them on Twitch](https://www.twitch.tv/evrowe). I have been on hiatus for a while due to life being incredibly busy, but at some point I'll get back to it.
+I'm often playing video games. I used to stream them on Twitch, but I have been on hiatus for a while due to life being incredibly busy. Maybe I'll get back to it eventually.
 
-I also write video game reviews for [Saving Content](https://www.savingcontent.com), and host the site's podcast, [Quicksve](https://www.anchor.fm/quicksavepodcast) along with the site's Editor in Chief and my dear friend [Scott Ellison II](https://www.twitter.com/Hawk_SE).
+I write video game reviews for [Saving Content](https://www.savingcontent.com), and host the site's podcast, [Quicksve](https://www.anchor.fm/quicksavepodcast) along with the site's Editor in Chief and my dear friend [Scott Ellison II](https://mastodon.social/@hawkse).
 
-I run a [coffee-focused Instagram account](https://www.instagram.com/evroweonline) where I document my coffee making process, beans that I sample, tools that I like (and review), and practice my latte art.
+I run a [coffee-focused Instagram account](https://www.instagram.com/evroweonline) where I document my coffee making process, beans that I sample, tools that I like (and review), and practice my latte art. If you like coffee you should give me a follow!
   
 I love to cook, though I don't often have as much time for it as I'd like these days. I do bust out the occasional tasty meal when time allows it, though.
 </div>

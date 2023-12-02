@@ -1,3 +1,3 @@
-# evan-rowe.com
+# evrowe.com
 
 it's my new website lol
