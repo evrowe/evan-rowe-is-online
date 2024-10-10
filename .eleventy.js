@@ -1,11 +1,9 @@
 // docs: https://www.11ty.io/docs/config/
 
 const { DateTime } = require("luxon");
-const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 module.exports = function (eleventyConfig) {
   // eleventyConfig.addFilter( "myFilter", function() {});
-  eleventyConfig.addPlugin(UpgradeHelper);
 
   eleventyConfig.setTemplateFormats([
     // Templates:
@@ -27,11 +25,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
-
-  // eleventyConfig.setBrowserSyncConfig({
-  //   // https://www.browsersync.io/docs/options/#option-ghostMode
-  //   ghostMode: false,
-  // });
 
   eleventyConfig.setServerOptions({
     // Defaults
