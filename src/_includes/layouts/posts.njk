@@ -5,7 +5,7 @@ templateClass: tmpl-posts
 
 {# This is the template for the Posts page–it lists the posts in the collection #}
 
-<div class="wrapper page" role="main">
+<section class="wrapper page" role="main">
   <div class="content">
     {{ content | safe }}
     <ul class="posts-list">
@@ -14,4 +14,4 @@ templateClass: tmpl-posts
       {%- endfor -%}
     </ul>
   </div>
-</div>
+</section>

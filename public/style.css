@@ -188,14 +188,15 @@ header nav ul li a:focus {
   margin: 15px auto 0;
 }
 
-.wrapper.page,
-.wrapper.home .content {
-  max-width: 800px;
+.wrapper.page {
+  width: 100%;
   margin: 15px auto 0;
+  max-width: 800px;
 }
 
 .wrapper.home .content {
   margin: 35px auto 0;
+  max-width: 800px;
 }
 
 footer {
