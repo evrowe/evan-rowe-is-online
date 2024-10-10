@@ -24,7 +24,7 @@
           <ul>
             <li><a {% if page.url == '/' %}aria-current="page"{% endif %}href="/">home</a></li>
             <li><a {% if page.url.includes('posts') %}aria-current="page"{% endif %} href="/posts">posts</a></li>
-            <!--li><a {% if page.url.includes('/about') %} aria-current="page"{% endif %}href="/about">about</a></li-->
+            <li><a {% if page.url.includes('/now') %} aria-current="page"{% endif %}href="/now">now</a></li>
             <li><a {% if page.url.includes('/contact') %} aria-current="page"{% endif %}href="/contact">contact</a></li>
           </ul>
         </nav>

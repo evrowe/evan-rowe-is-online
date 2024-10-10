@@ -9,11 +9,11 @@ pageTitle: Now - Evan Rowe is On The Internet
 - 🌲🏠 Living in Beaverton, OR with my family (two adults, three children, a dog, and a cat)
 - 🚙💨 Carting the children to too many activities
 - 👨🏻‍💻👯‍♀️ Managing a team of lovely humans at SDVI
-- 🚶🏻☀️ ~~Getting back into the habit of daily walks~~ haha no it's too rainy for that now
+- 🚴‍♂️💨 Trying to maintain 4-5 days of cycling per week
 
-## Playing
+<!--## Playing-->
 
-<ul class="now-grid playing poster">
+<!--ul class="now-grid playing poster"-->
 <!--   <li class="grid-item">
     <a class="item-link" href="" title="CYBERPUNK 2077: Phantom Liberty">
       <img src="https://cdn.glitch.global/bb2a64aa-d596-4b0f-839a-41f66ba7056e/mDW7h2zB.jpg?v=1696357714699" class="item-image" alt="Cyberpunk 2077 cover image"/>
@@ -66,27 +66,27 @@ pageTitle: Now - Evan Rowe is On The Internet
   <li class="grid-item">Cyberpunk 2077</li>
   <li class="grid-item">Dave the Diver</li>
   <li class="grid-item">Armored Core VI</li> -->
-</ul>
+<!--/ul-->
 
-## Listening
+<!--## Listening-->
 
-<ul class="now-grid listening square">
+<!--ul class="now-grid listening square"-->
 <!--   <li class="grid-item">Tycho: Dive</li>
   <li class="grid-item">Tycho: Awake</li>
   <li class="grid-item">Tycho: Epoch</li>
   <li class="grid-item">Talking Heads: Stop Making Sense</li> -->
-</ul>
+<!--/ul-->
 
-## Watching
+<!--## Watching-->
 
-<ul class="now-grid watching poster">
+<!--ul class="now-grid watching poster"-->
 <!--   <li class="grid-item">Only Murders in the Building</li>
   <li class="grid-item">Schitt's Creek</li>
   <li class="grid-item">Sex Education</li>
   <li class="grid-item">Steins;Gate</li> -->
-</ul>
+<!--/ul-->
 
-<script type="text/javascript" src="/public/now-data.js"></script>
+<!--script type="text/javascript" src="/public/now-data.js"></script-->
 <!-- <script type="text/javascript">
   (async function() {
     await insertGamesHTML()

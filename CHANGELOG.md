@@ -8,6 +8,7 @@
 - Adjusted typographic styles on headings and body text (improved line heights and bottom-margins for better readability)
 - Ensured better consistency of heading styles across different layouts
 - Adjusted footer internal padding to make it less visually heavy
+- Rolled out the initial, very minimal "now" page, with just the "currently" section
 
 ## 1.0.0 (2021-ish - 2024-10)
 
