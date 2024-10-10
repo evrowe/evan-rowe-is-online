@@ -183,6 +183,11 @@ header nav ul li a:focus {
   padding: 20px;
 }
 
+.wrapper.home {
+  max-width: 1200px;
+  margin: 15px auto 0;
+}
+
 .wrapper.page,
 .wrapper.home .content {
   max-width: 800px;
@@ -361,7 +366,8 @@ Dark Mode
   }
   
   p {
-    line-height: 1.8em;
+    line-height: 2.2em;
+    margin-bottom: 2em;
   }
 
   .prompt {
