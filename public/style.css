@@ -60,6 +60,7 @@ h3 {
   color: rgb(var(--color--purple-dark));
   font-family: var(--type--family--monospace);
   line-height: 1.2em;
+  margin-top: 2em;
 }
 
 a { color: rgb(var(--link-color--light-mode)); }
@@ -195,7 +196,7 @@ header nav ul li a:focus {
 }
 
 .wrapper.home .content {
-  margin: 35px auto 0;
+  margin: 25px auto 0;
   max-width: 800px;
 }
 
@@ -257,6 +258,10 @@ Theme Switcher
 /**
 Posts Listing Page Styling
 **/
+
+.posts-list article {
+  
+}
 
 /**
 Now Page Styling
