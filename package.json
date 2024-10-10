@@ -10,8 +10,7 @@
     "template"
   ],
   "engines": {
-    "node": "12"
-  },
+    "node": "16.x" },
   "version": "1.0.0",
   "scripts": {
     "build": "eleventy",
