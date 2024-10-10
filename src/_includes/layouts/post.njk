@@ -6,9 +6,9 @@ templateClass: tmpl-post
 {# This is the template for individual blog posts–it builds the front matter properties into the page #}
 
 <div class="wrapper post" role="main">
-  <div>
+  <article>
     {# The post front matter includes the title property #}
-    <h1 class='postTitle'>{{title}}</h1>
+    <h1 class="post-title">{{title}}</h1>
 
     {# ADD P ELEMENT FROM TODO ON THE NEXT LINE #}
     
@@ -28,6 +28,7 @@ templateClass: tmpl-post
         <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
       </p>
     {% endif %}
+      
     </div>
-  </div>
+  </article>
 </div>

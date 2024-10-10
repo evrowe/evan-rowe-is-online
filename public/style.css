@@ -195,6 +195,10 @@ header nav ul li a:focus {
   max-width: 800px;
 }
 
+.wrapper.page h1 {
+  font-size: 2em;
+}
+
 .wrapper.home .content {
   margin: 25px auto 0;
   max-width: 800px;
@@ -260,7 +264,7 @@ Posts Listing Page Styling
 **/
 
 .posts-list {
-  margin: 0;
+  margin: 50px 0 0;
 }
 
 .posts-list li {
@@ -299,12 +303,12 @@ Posts Listing Page Styling
   padding: 15px 15px;
 }
 
-.posts-list figure figcaption h3 {
+.posts-list figure figcaption h2 {
   color: rgb(var(--color--blue-light));
   margin: 0;
 }
 
-.posts-list a:hover figure figcaption h3 {
+.posts-list a:hover figure figcaption h2 {
   text-decoration: underline;
 }
 
@@ -317,6 +321,15 @@ Posts Listing Page Styling
 .posts-list figure figcaption p {
   line-height: 1em;
   margin: 15px 0 0;
+}
+
+/**
+Individual Post Styling
+**/
+
+.wrapper.post h1 {
+  font-size: 2em;
+/*   margin-top: 0; */
 }
 
 /**
@@ -444,7 +457,7 @@ Dark Mode
   }
   
   .underline {
-    border-bottom-color: rgb(var(--color--teal));
+    border-bottom-color: rgb(var(--color--purple));
   }
   
   code {
