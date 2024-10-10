@@ -7,7 +7,9 @@
 - [ ] Fix the site's Light theme
 - [ ] Roll out theme switcher
 - [ ] Make theme switcher respect system settings as its default
-- [ ] Fix the "back to top" button for mobile
+- [ ] Header and menu need a new solution on smaller screens
+- [x] Improve the site's mobile styles in general
+- [x] Fix the "back to top" button for mobile
 - [x] Roll out initial/simple "Now" page
 
 ## Now Page

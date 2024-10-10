@@ -283,7 +283,7 @@ Posts Listing Page Styling
   border: 1px solid rgb(var(--color--blue-dark));
   border-radius: 4px;
   display: grid;
-  grid-template-columns: 110px 1fr;
+  grid-template-columns: 1fr 4fr;
   margin: 0 0 25px;
 }
 
@@ -296,7 +296,7 @@ Posts Listing Page Styling
 }
 
 .posts-list figure img {
-  max-width: 110px;
+  max-width: 100%;
 }
 
 .posts-list figure figcaption {
@@ -475,21 +475,66 @@ Dark Mode
 Mobile Devices
 **/
 
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-device-width: 800px) {
   .to-top {
-    display: block;
-    visibility: visible;
-    position: fixed;
     bottom: 25px;
+    display: block;
+    font-size: 2em;
+    position: fixed;
     right: 25px;
-    z-index: 1000;
-    background-color: rgb(var(--color--purple));
-    border-radius: 3px;
-    box-shadow: 0 0 6px rgba(var(--color--white), .3);
-    width: 26px;
-    height: 26px;
+    text-shadow: 0 0 5px rgba(var(--color--black), 1);
     text-align: center;
-    vertical-align: middle;
+    visibility: visible;
+    z-index: 1000;
+  }
+
+  .wrapper.page {
+    max-width: 90%;
+  }
+
+  .posts-list figure {
+    grid-template-columns: 2fr 5fr;
+  }
+}
+
+@media only screen and (max-device-width: 500px) {
+  .wrapper.page h1 {
+    font-size: 2rem;
+  }
+
+  .posts-list figure h2 {
+    font-size: 1.5rem;
+  }
+
+  .posts-list figure p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-device-width: 400px) {
+  .wrapper.page h1 {
+    font-size: 1.75rem;
+  }
+
+  .posts-list figure {
+    grid-template-columns: 2fr 4fr;
+  }
+
+  .posts-list figure h2 {
+    font-size: 1.25rem;
+  }
+
+  .posts-list figure p {
+    font-size: 1rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) and (max-device-width: 800px) {
+  body a.to-top,
+  body a.to-top:active,
+  body a.to-top:focus,
+  body a.to-top:visited {
+    color: rgb(var(--color--white));
   }
 }
 

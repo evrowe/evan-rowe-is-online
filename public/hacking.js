@@ -13,4 +13,16 @@ const toggleTheme = e => {
   }
 }
 
+// Listen for clicks on scroller
+const triggerScroll = e => {
+  console.log('scroll tapped!')
+  if (e.target.className !== 'to-top') return
+  let body = document.querySelector('body')
+
+  if (window.scrollY > 0) {
+    window.scrollTo(0, 0)
+  }
+}
+
 document.addEventListener('click', toggleTheme)
+document.addEventListener('click', triggerScroll)
