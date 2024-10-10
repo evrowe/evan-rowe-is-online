@@ -1,6 +1,7 @@
 ---
 title: Today is my 40th Birthday
 description: Some mid-life navel gazing.
+listingImage: https://cdn.glitch.global/bb2a64aa-d596-4b0f-839a-41f66ba7056e/a-very-40-selfie-haha-millennials.jpeg?v=1728520658922
 previewImage: https://cdn.glitch.global/bb2a64aa-d596-4b0f-839a-41f66ba7056e/a-very-40-selfie-haha-millennials-preview.jpeg?v=1728584904751
 date: 2024-10-08
 tags:

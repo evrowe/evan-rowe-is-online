@@ -16,7 +16,7 @@ templateClass: tmpl-posts
         <li{% if page.url == post.url %} aria-current="page"{% endif %}>
           <a href="{{post.url}}">
             <figure>
-              <img src="{{post.data.previewImage}}" />
+              <img src="{{post.data.listingImage}}" />
               <figcaption>
                 <h2>{{post.data.title}}</h2>
                 <date>Posted on {{post.data.page.date | htmlDateString}}</date><br>
