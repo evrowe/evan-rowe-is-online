@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="fediverse:creator" content="@evrowe@pdx.social" />
+    {% if page.url.includes('posts/') %}
+      <meta property="og:title" content="{{ title }}" />
+      <meta property="og:description" content="{{ description }}" />
+    {% endif %}
     <link rel="stylesheet" type="text/css" href="/public/fonts.css" />
     <link rel="stylesheet" type="text/css" href="/public/style.css" />
     <title>{{ pageTitle or siteData.name }}</title>
