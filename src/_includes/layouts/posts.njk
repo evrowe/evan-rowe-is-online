@@ -9,14 +9,19 @@ templateClass: tmpl-posts
   <div class="content">
     {{ content | safe }}
     <section class="posts-list">
+      <ul>
+        
+      </ul>
       {%- for post in collections.posts -%}
-        <article{% if page.url == post.url %} aria-current="page"{% endif %}>
-          <img src="{{post.data.previewImage}}" />
-          <fragment>
-            <h3><a href="{{post.url}}">{{post.data.title}}</a></h3>
-            {{post.data.page.date | htmlDateString}}
-          </fragment>
-          </article>
+        <li{% if page.url == post.url %} aria-current="page"{% endif %}>
+          <figure>
+            <img src="{{post.data.previewImage}}" />
+            <figcaption>
+              <h3><a href="{{post.url}}">{{post.data.title}}</a></h3>
+              {{post.data.page.date | htmlDateString}}
+            </figcaption>
+          </figure>
+        </li>
       {%- endfor -%}
     </section>
   </div>

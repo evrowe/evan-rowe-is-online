@@ -259,15 +259,28 @@ Theme Switcher
 Posts Listing Page Styling
 **/
 
-.posts-list article {
-  border: 1px solid rgb(var(--color--blue-dark));
+.posts-list {
+  margin: 0;
 }
 
-.posts-list article img {
+.posts-list li {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 0;
+}
+
+.posts-list figure {
+  border: 1px solid rgb(var(--color--blue-dark));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin: 0;
+}
+
+.posts-list figure img {
   max-width: 100px;
 }
 
-.posts-list article a {
+.posts-list figure figcaption {
   
 }
 
