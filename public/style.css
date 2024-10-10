@@ -59,6 +59,7 @@ h2,
 h3 {
   color: rgb(var(--color--purple-dark));
   font-family: var(--type--family--monospace);
+  line-height: 1.2em;
 }
 
 a { color: rgb(var(--link-color--light-mode)); }
