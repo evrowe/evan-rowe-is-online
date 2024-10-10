@@ -269,15 +269,26 @@ Posts Listing Page Styling
   margin-left: 0;
 }
 
+.posts-list li a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .posts-list figure {
+  background-color: rgb(var(--color--deep-night-blue));
   border: 1px solid rgb(var(--color--blue-dark));
+  border-radius: 4px;
   display: grid;
   grid-template-columns: 110px 1fr;
   margin: 0 0 25px;
 }
 
-.posts-list figure:hover {
-  border: 1px solid rgb(var(--color--cornflower));
+.posts-list li a:hover {
+  color: inherit;
+}
+
+.posts-list a:hover figure {
+  border: 1px solid rgb(var(--color--blue-light));
 }
 
 .posts-list figure img {
@@ -289,18 +300,23 @@ Posts Listing Page Styling
 }
 
 .posts-list figure figcaption h3 {
+  color: rgb(var(--color--blue-light));
   margin: 0;
 }
 
+.posts-list a:hover figure figcaption h3 {
+  text-decoration: underline;
+}
+
 .posts-list figure figcaption date {
-  font-size: .8em;
+  font-size: .7em;
   font-weight: bold;
   margin-top: 5px;
 }
 
 .posts-list figure figcaption p {
-  margin: 15px 0 0;
   line-height: 1em;
+  margin: 15px 0 0;
 }
 
 /**

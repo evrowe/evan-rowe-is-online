@@ -15,14 +15,15 @@ templateClass: tmpl-posts
       {%- for post in collections.posts -%}
         <li{% if page.url == post.url %} aria-current="page"{% endif %}>
           <a href="{{post.url}}">
-          <figure>
-            <img src="{{post.data.previewImage}}" />
-            <figcaption>
-              <h3>{{post.data.title}}</h3>
-              <date>Posted on {{post.data.page.date | htmlDateString}}</date><br>
-              <p>{{post.data.description}}</p>
-            </figcaption>
-          </figure>
+            <figure>
+              <img src="{{post.data.previewImage}}" />
+              <figcaption>
+                <h3>{{post.data.title}}</h3>
+                <date>Posted on {{post.data.page.date | htmlDateString}}</date><br>
+                <p>{{post.data.description}}</p>
+              </figcaption>
+            </figure>
+          </a>
         </li>
       {%- endfor -%}
     </section>
