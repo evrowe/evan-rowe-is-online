@@ -248,7 +248,8 @@ Theme Switcher
 Now Page Formatting
 **/
 
-.wrapper.now {
+.wrapper.now,
+.wrapper.post {
   margin: 0 auto;
   max-width: 800px;
 }
@@ -357,6 +358,10 @@ Dark Mode
   h3 {
     color: rgb(var(--color--purple));
     text-shadow: 0 0 8px rgba(var(--color--white), .1);
+  }
+  
+  p {
+    line-height: 1.8em;
   }
 
   .prompt {
