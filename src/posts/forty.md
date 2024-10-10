@@ -28,4 +28,4 @@ There's a lot I could say about things I've been up to lately; hobbies, interest
 
 I'm glad to be here. 40 is great, for me at least, and I'm honestly doing as well as or better than I could have expected for myself at this point in life. I don't know what more I could ask for.
 
-Now if you'll excuse me, I need to haul this creaking, whithered husk out of my chair so I can slam some Tylenol to aid my recovery from my morning bike ride, and will myself forward into the rest of my day of enjoyment and celebration, but not too much celebration, and a reasonable bed time. Ha HA! Age humor.
+Now if you'll excuse me, I need to haul this creaking, withered husk out of my chair so I can slam some Tylenol to aid my recovery from my morning bike ride, and will myself forward into the rest of my day of enjoyment and celebration, but not too much celebration, and a reasonable bed time. Ha HA! Age humor.
