@@ -272,16 +272,35 @@ Posts Listing Page Styling
 .posts-list figure {
   border: 1px solid rgb(var(--color--blue-dark));
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  margin: 0;
+  grid-template-columns: 110px 1fr;
+  margin: 0 0 25px;
+}
+
+.posts-list figure:hover {
+  border: 1px solid rgb(var(--color--cornflower));
 }
 
 .posts-list figure img {
-  max-width: 100px;
+  max-width: 110px;
 }
 
 .posts-list figure figcaption {
-  
+  padding: 15px 15px;
+}
+
+.posts-list figure figcaption h3 {
+  margin: 0;
+}
+
+.posts-list figure figcaption date {
+  font-size: .8em;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.posts-list figure figcaption p {
+  margin: 15px 0 0;
+  line-height: 1em;
 }
 
 /**
