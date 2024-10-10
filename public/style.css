@@ -133,7 +133,7 @@ body {
 }
 
 header {
-  background-color: rgb(var(--color--midnight-blue));
+  /*background-color: rgb(var(--color--midnight-blue));*/
   color: rgb(var(--header-color));
   display: grid;
   gap: 10px;
@@ -346,7 +346,6 @@ Dark Mode
     color: rgb(var(--color--not-quite-white));
   }
   
-  header,
   footer {
     background: rgb(var(--color--deep-night-blue));
   }

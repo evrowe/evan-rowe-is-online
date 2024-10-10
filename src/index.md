@@ -12,11 +12,11 @@ Welcome to {{ siteData.name }}.
 
 _(Yes, I'm old.)_
 
-Hi, I'm Evan. I'm an Engineering Manager at [SDVI](https://sdvi.com), and a longtime frontend and JavaScript engineer. Formerly an Eng Manager at [HashiCorp](https://www.hashicorp.com) and at [Fastly](https://www.fastly.com), I've spent the past four years and change managing teams, and over a decade creating rich JavaScript applications. While I've always had a passion for writing code, coaching people and helping teams do their best work is what drives me today.
+Hi, I'm Evan. I'm an Engineering Manager at [SDVI](https://sdvi.com), and a longtime frontend and JavaScript engineer. Formerly a technical type person at [HashiCorp](https://www.hashicorp.com) and at [Fastly](https://www.fastly.com), I've spent the past five years and change managing teams, and over a decade creating rich JavaScript applications and web experiences (oooooh!). While I've always had a passion for writing code, coaching people and helping teams do their best work is what drives me today.
 
 I take a people-focused approach to helping teams write software and deliver features; I firmly believe the happiness of a team directly correlates to the quality of its output, and prioritizing team health above all else is an amazingly effective path to getting great results. Shocker, I know.
 
-This website is still very much a WIP but I'm a big fan of iteration and trying stuff out.
+This website is still (yes, still, after like four years) very much a WIP but I'm a big fan of iteration and trying stuff out.
 
 ### When I'm Not at Work
 
