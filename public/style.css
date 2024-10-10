@@ -260,6 +260,14 @@ Posts Listing Page Styling
 **/
 
 .posts-list article {
+  border: 1px solid rgb(var(--color--blue-dark));
+}
+
+.posts-list article img {
+  max-width: 100px;
+}
+
+.posts-list article a {
   
 }
 
