@@ -1,7 +1,7 @@
 ---
-title: This is a sample post
-description: Add posts and your site build will publish them
-date: 2022-04-19
+title: Today is my 40th Birthday
+description: Some mid-life navel gazing
+date: 2024-10-08
 tags:
   - posts
 layout: layouts/post.njk
