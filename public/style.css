@@ -194,11 +194,15 @@ header nav ul li a:focus {
   margin: 15px auto 0;
 }
 
+.wrapper.home .content {
+  margin: 35px auto 0;
+}
+
 footer {
   font-family: var(--type--family--monospace);
   grid-row: 3;
   margin-top: 100px;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 /**
