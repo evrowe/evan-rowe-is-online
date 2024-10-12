@@ -6,7 +6,7 @@ pageTitle: Contact Me - Evan Rowe is On The Internet
 
 When I _am_ `very logged on`, you can find me in the following places:
 
-* 🐘 Mastodon: <a rel="me" href="https://pdx.social/@evrowe">https://pdx.social/@evrowe</a>
+* 🐘 Mastodon: <a rel="me" href="https://hachyderm.io/@evrowe">https://hachyderm.io/@evrowe</a>
 * 💼 LinkedIn: <a href="https://www.linkedin.com/in/evrowe" target="_blank">https://www.linkedin.com/in/evrowe</a>
 * ⌨️ GitHub: <a href="https://www.github.com/evrowe" target="_blank">https://www.github.com/evrowe</a>
 * 📸 Glass: <a href="https://glass.photo/evrowe" target="_blank">https://glass.photo/evrowe</a>
