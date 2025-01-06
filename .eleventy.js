@@ -31,7 +31,7 @@ module.exports = function (eleventyConfig) {
   });
   
   eleventyConfig.addFilter("htmlNiceDateString", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("MMM d, yyyy")
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("LLLL d, yyyy")
   })
 
   eleventyConfig.setServerOptions({
