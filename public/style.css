@@ -324,12 +324,13 @@ Individual Post Styling
 **/
 
 .wrapper.post .post-date {
+  font-size: .9em;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
 .wrapper.post h1 {
-  font-size: 1.6em;
+  font-size: 1.5em;
   margin-top: 0;
 }
 
@@ -337,7 +338,7 @@ section.audio {
   border-bottom: 1px solid;
   border-top: 1px solid;
   margin-bottom: 2em;
-  margin-top: 1.6em;
+  margin-top: 1.8em;
   padding: .6em 0 .7em;
 }
 
@@ -354,6 +355,25 @@ section.audio audio {
 
 .big-image {
   width: 100%;
+}
+
+.footnotes-sep {
+  margin-top: 2em;
+}
+
+ol.footnotes-list {
+  font-size: .9em;
+  padding-left: 1em;
+}
+
+ol.footnotes-list ::marker {
+  color: rgb(var(--color--blue-light));
+  font-style: italic;
+  font-weight: bold;
+}
+
+.controls {
+  border-top: 1px solid;
 }
 
 /**
@@ -472,7 +492,7 @@ Dark Mode
   }
   
   p {
-    line-height: 2.2em;
+    line-height: 2.1em;
     margin-bottom: 2em;
   }
 

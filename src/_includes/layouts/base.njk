@@ -9,7 +9,7 @@
     <meta property="og:image" content="{{ previewImage }}" />{% endif %}
     <link rel="stylesheet" type="text/css" href="/public/fonts.css" />
     <link rel="stylesheet" type="text/css" href="/public/style.css" />
-    <title>{{ pageTitle or siteData.name }}</title>
+    <title>{{ title or pageTitle or siteData.name }}</title>
     <script type="text/javascript" src="/public/hacking.js"></script>
     <link rel="me" href="https://pdx.social/@evrowe" />
     <link rel="me" href="https://hachyderm.io/@evrowe" />
