@@ -2,6 +2,7 @@
 
 const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
+const markdownItFootnote = require("markdown-it-footnote");
 
 module.exports = function (eleventyConfig) {
   // eleventyConfig.addFilter( "myFilter", function() {});
@@ -20,6 +21,8 @@ module.exports = function (eleventyConfig) {
     "woff",
     "woff2",
   ]);
+  
+  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItFootnote));
 
   eleventyConfig.addPassthroughCopy("public");
 
