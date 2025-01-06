@@ -1,6 +1,7 @@
 // docs: https://www.11ty.io/docs/config/
 
 const { DateTime } = require("luxon");
+const markdownIt = require("markdown-it");
 
 module.exports = function (eleventyConfig) {
   // eleventyConfig.addFilter( "myFilter", function() {});

@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "luxon": "^2.3.2"
+    "luxon": "^2.3.2",
+    "markdown-it"
   },
   "license": "MIT"
 }
