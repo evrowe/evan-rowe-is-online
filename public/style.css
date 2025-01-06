@@ -250,10 +250,6 @@ Theme Switcher
   width: 14px;
 }
 
-.big-image {
-  width: 100%;
-}
-
 .to-top {
   display: none;
   visibility: hidden;
@@ -330,6 +326,27 @@ Individual Post Styling
 .wrapper.post h1 {
   font-size: 2em;
 /*   margin-top: 0; */
+}
+
+section.audio {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  margin-bottom: 2em;
+  padding: 1em 0;
+}
+
+section.audio p {
+  font-size: .95rem;
+  margin: 0;
+}
+
+section.audio audio {
+  padding-top: 5px;
+  width: 100%;
+}
+
+.big-image {
+  width: 100%;
 }
 
 /**

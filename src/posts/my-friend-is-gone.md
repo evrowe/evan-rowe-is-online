@@ -10,6 +10,16 @@ tags:
 layout: layouts/post.njk
 ---
 
+<section class="audio">
+
+Listen to this post: (15 minutes, 39 seconds)
+
+<audio controls>
+    <source src="https://cdn.glitch.me/bb2a64aa-d596-4b0f-839a-41f66ba7056e/2025-01-05-my-friend-is-gone.mp3?v=1736195248292" type="audio/mpeg">
+</audio>
+
+</section>
+
 Man, friendship is a weird thing isn’t it. Especially in adulthood, especially when you’re a busy person with “responsibilities” and responsibilities; especially when you’re absorbed in trying to maintain your own immediate chaos engine; especially when the graph of people you know has become a sprawling organism of interconnected and disparate clumps and it just gets too damn hard to maintain awareness of every group and every branch and every individual you know.
 
 Especially, _especially_ when you have the types of friendships with people that are _easy_, and that you can pick back up right where you left off no matter how much time has gone by. Those are the easy ones to let slip. Those are the ones you think don’t need as much maintenance. But that’s a trap. Every friendship needs maintenance, and the easy friendships are the ones that deserve more of your attention. I don’t make the rules, I just know this stuff only becomes clear when you realize you’ve squandered something, when you have something to regret. Dammit.
