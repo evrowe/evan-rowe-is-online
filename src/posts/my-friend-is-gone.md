@@ -1,7 +1,9 @@
 ---
-title: My Friend is Gone (or: "Goodbye, Lincoln")
+title: My Friend is Gone (or, "Goodbye, Lincoln")
 description: A reflection on loss, friendship, and getting bad news.
 date: 2025-01-05
+listingImage: https://cdn.glitch.global/bb2a64aa-d596-4b0f-839a-41f66ba7056e/linc.jpg?v=1736139379166
+previewImage: https://cdn.glitch.global/bb2a64aa-d596-4b0f-839a-41f66ba7056e/linc-thumbnail.jpeg?v=1736139419424
 tags:
   - posts
   - life events
@@ -61,3 +63,5 @@ I don’t like centering myself in other people’s stories or hardships. I see 
 Look at how many people whose lives he made better though, just by being in them. He certainly improved mine, just by being a small part of it. He was one of _those_ people; the kind of person whose spark left an afterglow everywhere he went. I knew him, and I regret not knowing him better, but I’m grateful for the chance to have known him at all. Any time spent with Lincoln _was a gift_, and I will remember him always.
 
 Goodbye, Linc. I miss you. Thank you for being my friend.
+
+<img class="big-image" src="https://cdn.glitch.global/bb2a64aa-d596-4b0f-839a-41f66ba7056e/linc.jpg?v=1736139379166">

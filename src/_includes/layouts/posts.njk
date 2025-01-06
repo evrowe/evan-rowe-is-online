@@ -12,7 +12,7 @@ templateClass: tmpl-posts
       <ul>
         
       </ul>
-      {%- for post in collections.posts -%}
+      {%- for post in collections.posts | reverse -%}
         <li{% if page.url == post.url %} aria-current="page"{% endif %}>
           <a href="{{post.url}}">
             <figure>
