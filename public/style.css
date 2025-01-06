@@ -326,10 +326,11 @@ Individual Post Styling
 .wrapper.post .post-date {
   font-size: .9em;
   margin-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: .1em;
 }
 
 .wrapper.post h1 {
+  color: rgb(var(--color--blue-light));
   font-size: 1.5em;
   margin-top: 0;
 }
