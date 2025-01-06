@@ -8,6 +8,7 @@ templateClass: tmpl-post
 <div class="wrapper post" role="main">
   <article>
     {# The post front matter includes the title property #}
+    <p class="post-date">{{date | htmlNiceDateString}}</p>
     <h1 class="post-title">{{title}}</h1>
 
     {# ADD P ELEMENT FROM TODO ON THE NEXT LINE #}
