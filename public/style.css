@@ -301,6 +301,7 @@ Posts Listing Page Styling
 
 .posts-list figure figcaption h2 {
   color: rgb(var(--color--blue-light));
+  font-size: 1.5rem;
   margin: 0;
 }
 
@@ -309,14 +310,14 @@ Posts Listing Page Styling
 }
 
 .posts-list figure figcaption date {
-  font-size: .7em;
-  font-weight: bold;
-  margin-top: 5px;
+  font-size: .8em;
+  margin-top: 0;
 }
 
 .posts-list figure figcaption p {
+  font-size: .95em;
   line-height: 1em;
-  margin: 15px 0 0;
+  margin: 20px 0 0;
 }
 
 /**
