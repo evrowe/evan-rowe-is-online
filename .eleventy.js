@@ -1,6 +1,8 @@
 // docs: https://www.11ty.io/docs/config/
 
 const { DateTime } = require("luxon");
+const markdownIt = require("markdown-it");
+const markdownItFootnote = require("markdown-it-footnote");
 
 module.exports = function (eleventyConfig) {
   // eleventyConfig.addFilter( "myFilter", function() {});
@@ -19,12 +21,18 @@ module.exports = function (eleventyConfig) {
     "woff",
     "woff2",
   ]);
+  
+  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItFootnote));
 
   eleventyConfig.addPassthroughCopy("public");
 
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
+  
+  eleventyConfig.addFilter("htmlNiceDateString", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("LLLL d, yyyy")
+  })
 
   eleventyConfig.setServerOptions({
     // Defaults

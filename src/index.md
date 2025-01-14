@@ -20,7 +20,7 @@ This website is still (yes, still, after like four years) very much a WIP but I'
 
 I'm often playing video games. I used to stream them on Twitch, but I have been on hiatus for a while due to life being incredibly busy. Maybe I'll get back to it eventually.
 
-I write video game reviews for [Saving Content](https://www.savingcontent.com), and host the site's podcast, [Quicksve](https://www.anchor.fm/quicksavepodcast) along with the site's Editor in Chief and my dear friend [Scott Ellison II](https://mastodon.social/@hawkse).
+I write video game reviews for [Saving Content](https://www.savingcontent.com), and host the site's podcast, [Quicksave](https://www.anchor.fm/quicksavepodcast) along with the site's Editor in Chief and my dear friend [Scott Ellison II](https://mastodon.social/@hawkse).
 
 I run a [coffee-focused Instagram account](https://www.instagram.com/evroweonline) where I document my coffee making process, beans that I sample, tools that I like (and review), and practice my latte art. If you like coffee you should give me a follow!
   

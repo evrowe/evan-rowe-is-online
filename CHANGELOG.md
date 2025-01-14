@@ -1,3 +1,15 @@
+## 2.1.0 (2025-01-05)
+
+- Updated styling for "Posts" page
+  - Decreased line-heights
+- Added `markdown-it-footnote` plugin to generate footnotes properly
+- More adjustments to typographic styles for individual posts
+  - Headings are smaller
+  - Decreased line-height
+- Added the publish date to individual posts ("Jan 1, 2025")
+- Added styling for an "audio" section to posts for posts with accompanying audio versions
+- Probably some other tweaks I forgot because I'm writing this a week after the fact
+
 ## 2.0.0 (2024-10-10)
 
 - Upgraded site to run on `11ty@2`

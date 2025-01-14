@@ -250,10 +250,6 @@ Theme Switcher
   width: 14px;
 }
 
-.big-image {
-  width: 100%;
-}
-
 .to-top {
   display: none;
   visibility: hidden;
@@ -305,6 +301,7 @@ Posts Listing Page Styling
 
 .posts-list figure figcaption h2 {
   color: rgb(var(--color--blue-light));
+  font-size: 1.5rem;
   margin: 0;
 }
 
@@ -313,23 +310,72 @@ Posts Listing Page Styling
 }
 
 .posts-list figure figcaption date {
-  font-size: .7em;
-  font-weight: bold;
-  margin-top: 5px;
+  font-size: .8em;
+  margin-top: 0;
 }
 
 .posts-list figure figcaption p {
+  font-size: .95em;
   line-height: 1em;
-  margin: 15px 0 0;
+  margin: 20px 0 0;
 }
 
 /**
 Individual Post Styling
 **/
 
+.wrapper.post .post-date {
+  font-size: .9em;
+  margin-bottom: 0;
+  padding-bottom: .1em;
+}
+
 .wrapper.post h1 {
-  font-size: 2em;
-/*   margin-top: 0; */
+  color: rgb(var(--color--blue-light));
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+section.audio {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  margin-bottom: 2em;
+  margin-top: 1.8em;
+  padding: .6em 0 .7em;
+}
+
+section.audio p {
+  font-size: .95rem;
+  margin: 0;
+  padding: 0;
+}
+
+section.audio audio {
+  padding-top: 5px;
+  width: 100%;
+}
+
+.big-image {
+  width: 100%;
+}
+
+.footnotes-sep {
+  margin-top: 2em;
+}
+
+ol.footnotes-list {
+  font-size: .9em;
+  padding-left: 1em;
+}
+
+ol.footnotes-list ::marker {
+  color: rgb(var(--color--blue-light));
+  font-style: italic;
+  font-weight: bold;
+}
+
+.controls {
+  border-top: 1px solid;
 }
 
 /**
@@ -448,7 +494,7 @@ Dark Mode
   }
   
   p {
-    line-height: 2.2em;
+    line-height: 2.1em;
     margin-bottom: 2em;
   }
 
