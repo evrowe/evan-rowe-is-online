@@ -10,6 +10,7 @@ pageTitle: Now - Evan Rowe is On The Internet
 - 🚙💨 Carting the children to too many activities
 - 👨🏻‍💻👯‍♀️ Managing a team of lovely humans at SDVI
 - 🚴‍♂️💨 Trying to maintain 4-5 days of cycling per week
+- Building from `main` branch
 
 <!--## Playing-->
 
