@@ -25,6 +25,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItFootnote));
 
   eleventyConfig.addPassthroughCopy("public");
+  eleventyConfig.addPassthroughCopy({"public/robots.txt" : "/robots.txt"});
 
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
