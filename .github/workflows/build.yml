@@ -1,0 +1,52 @@
+# This workflow will build and deploy an 11ty site to GitHub Pages
+name: Deploy 11ty with GitHub Pages
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on pushes to `github-pages` branch or pull request events for the `main` branch
+  push:
+    branches: [ "github-pages" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued while a run is already in progress.
+# Do NOT cancel in-progress runs so that deployments in flight can complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # The build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build @11ty
+        uses: cjerrington/actions-eleventy@master
+        with:
+          install_dependencies: true
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "./build"
+
+  # The deploy job
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
