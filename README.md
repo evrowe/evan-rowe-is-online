@@ -1,25 +1,44 @@
 # evrowe.com
 
-it's my new website lol
+it's my ~~new~~ website lol
 
-## Assorted Notes About Working With This Project in Glitch
+## Dependencies
 
-### Pulling the private repo and working locally is extremely viable.
+### Website
+- Node.js v16
+- @11ty/eleventy@v2
 
-Doing this smoothly requires the following steps to allow Glitch to receive pushes and auto-update the project after pushes:
+### Build
+- [actions/checkout@v4](https://www.github.com/actions/checkout/tree/v4/)
+- [cjerrington/actions-eleventy@master](https://github.com/cjerrington/actions-eleventy/tree/master/)
+- [actions/upload-pages-artifact@v3](https://github.com/actions/upload-pages-artifact/tree/v3/)
+- [actions/deploy-pages@v4](https://github.com/actions/deploy-pages/tree/v4/)
 
-- In the Glitch terminal, changing the git settings to accept pushes with this command: `git config receive.denyCurrentBranch updateInstead`
-- Ordinarily, manually running `refresh` in the Glitch terminal is required for pushed updates to be processed; this can be automated with a `post-receive` git hook:
-  - `printf '#!/bin/sh\nrefresh' > .git/hooks/post-receive && chmod +x .git/hooks/post-receive`
-  - This command creates the `post-receive` hook in Glitch's copy of the repo with the 'refresh' command as the sole instruction
-  - It also sets the execute permission on the hook to ensure it can actually run
+## Local Dev Quickstart
 
-### Glitch, 11ty, and Node Version Limitations/Quirks
+### Developing Locally
 
-This site is run on `11ty`, a popular static site generation tool. It's great!
+- Clone this repo 😱
+- Install or use the appropriate Node version (i.e. `nvm use 16`)
+- `npm i`
+- `npm run start`
 
-Glitch currently (as of this writing, 2022-10-10) does not support versions of Node higher than 16. `11ty@3` requires a newer version of Node, as such the site is currently frozen on `11ty@2`.
+### Building the Artifact
 
-Upgrading Node versions on a Glitch project is as simple as updating the major version in the `"engines"` entry of your project's `package.json`. This change does not take effect until your Glitch project goes to sleep and is woken back up, which can be most quickly achieved by navigating away from the project/closing the window entirely and coming back an arbitrary amount of time later. 15 minutes seemed to suffice when I did this most recently.
+- `npm run build`
+  - (this is just a proxy for `npx eleventy @11ty/eleventy`)
 
-When you upgrade Node versions, you will need to use the Glitch terminal to nuke the project's `node_modules` folder and run `npm install` to ensure all of your dependencies are compatible and Glitch is able to build and serve the project.
+## GitHub Pages, Who Knew?
+
+The really nice thing about building static sites is they're super easy to host pretty much anywhere, and they're a great fit for GitHub Pages. With the advent of GitHub Actions many years ago, GitHub is a pretty effective place to host the source code, build it into an artifact,and deploy &amp; host that artifact on the world wide web.
+
+I don't know if this will be its _permanent_ home (I don't love having all my eggs in one basket, etc), BUT it's good enough for now. I should probably mirror this repo to one or two other places though.
+
+## History Lesson
+Originally, this site was 100% written, built, deployed, and hosted on Glitch dot com. It was a really good and cool way of doing things because I could edit the site or its posts from anywhere, make changes, and have them be instantly deployed, plus Glitch allowed for custom domains at the time, and automatically handled TLS provisioning.
+
+On May 22, 2025, [Glitch announced they would be shutting down core components of Glitch's service](https://blog.glitch.com/post/changes-are-coming-to-glitch/), including _web hosting_, effectively putting a big scary countdown timer on many (most?) projects running on the platform. I already had this project's git repo cloned locally AND backed up to GitHub, so I was pretty well on the path to ejecting.
+
+Within two hours of reading the announcement, I had a GitHub actions workflow written to build and deploy the site to GitHub Pages, and I had pointed my domain at that build and provisioned new certs for it all with a few button clicks. Thanks, GitHub! (Also, this is why I like to set low TTLs on DNS records)
+
+You know what, I'm gonna turn this into a blog post instead.
