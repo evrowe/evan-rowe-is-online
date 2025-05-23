@@ -1,3 +1,11 @@
+## 2.1.1 (2025-05-23)
+
+- Set up GitHub Actions workflow to deploy site to GitHub Pages
+- Reworked `TODO.md` to follow a categorized structure
+  - Added several items
+- Rewrote `README.md` to include dependencies, build instructions, and more
+- Updated the footer to remove the reference to Glitch dot com, replacing it with a "hosted on GitHub Pages" note
+
 ## 2.1.0 (2025-01-05)
 
 - Updated styling for "Posts" page
