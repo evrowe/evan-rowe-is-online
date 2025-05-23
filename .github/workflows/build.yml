@@ -3,9 +3,9 @@ name: Deploy 11ty with GitHub Pages
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on pushes to `github-pages` branch or pull request events for the `main` branch
+  # Triggers the workflow on pushes or pull request events ONLY for the `main` branch
   push:
-    branches: [ "github-pages" ]
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
@@ -48,5 +48,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
     environment:
-      name: github-pages
+      name: main
       url: ${{ steps.deployment.outputs.page_url }}
